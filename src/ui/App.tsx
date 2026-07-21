@@ -132,7 +132,7 @@ export function App() {
       <header className="brand"><span>ChordSheet</span><small>LOCAL EDITION</small></header>
       <section className="welcome-card">
         <h1>先整理，再专心演奏。</h1>
-        <p className="welcome-lede">用 <a className="skill-inline" href="/downloads/chordsheet-builder-skill-v0.1.1.zip" download aria-label="下载 ChordSheet Builder 制谱 Skill（ZIP）">制谱 Skill</a> 把文字、截图或 PDF 生成 <code>.chordsheet</code> 谱包。</p>
+        <p className="welcome-lede">用 <a className="skill-inline" href={`${import.meta.env.BASE_URL}downloads/chordsheet-builder-skill-v0.1.1.zip`} download aria-label="下载 ChordSheet Builder 制谱 Skill（ZIP）">制谱 Skill</a> 把文字、截图或 PDF 生成 <code>.chordsheet</code> 谱包。</p>
         <button
           className={`package-drop-zone ${isDraggingPackage ? "is-dragging" : ""}`}
           type="button"
