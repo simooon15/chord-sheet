@@ -1,0 +1,123 @@
+{
+  "format": "chordsheet",
+  "formatVersion": "1.0.0",
+  "documentId": "the-cure-olivia-rodrigo-character-anchor-test",
+  "createdAt": "2026-07-19T20:30:00+08:00",
+  "updatedAt": "2026-07-19T20:30:00+08:00",
+  "generator": { "name": "ChordSheet Builder character-anchor test", "version": "1.0.0" },
+  "metadata": {
+    "title": "The Cure",
+    "artist": "Olivia Rodrigo",
+    "language": "en",
+    "difficulty": "beginner",
+    "baseWrittenKey": "C",
+    "instrument": { "type": "guitar", "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"] }
+  },
+  "view": { "transposeSemitones": 0, "capo": 1, "fontScale": 1, "chordDisplay": "name" },
+  "sources": [{
+    "id": "source-the-cure-pdf",
+    "kind": "pdf",
+    "role": "both",
+    "originalName": "The Cure Chords by Olivia Rodrigotabs @ Ultimate Guitar Archive.pdf",
+    "mimeType": "application/pdf",
+    "pageCount": 3,
+    "embedded": false
+  }],
+  "sections": [
+    {
+      "id": "intro", "type": "intro", "label": "Intro", "lines": [
+        { "id": "intro-1", "type": "chords", "chords": [{ "id": "intro-1-asus2", "symbol": "Asus2" }, { "id": "intro-1-cmaj7", "symbol": "Cmaj7" }] },
+        { "id": "intro-2", "type": "chords", "chords": [{ "id": "intro-2-asus2", "symbol": "Asus2" }, { "id": "intro-2-cmaj7", "symbol": "Cmaj7" }] }
+      ]
+    },
+    {
+      "id": "verse-1", "type": "verse", "label": "Verse 1", "lines": [
+        { "id": "v1-1", "type": "lyrics", "text": "All the pretty girls in the foreground of my mind", "chords": [{ "id": "v1-1-asus2", "symbol": "Asus2", "anchor": { "graphemeOffset": 0 } }, { "id": "v1-1-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 45 } }] },
+        { "id": "v1-2", "type": "lyrics", "text": "I thought I'd done enough, but they keep moving the line", "chords": [{ "id": "v1-2-asus2", "symbol": "Asus2", "anchor": { "graphemeOffset": 2 } }, { "id": "v1-2-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 52 } }] },
+        { "id": "v1-3", "type": "lyrics", "text": "I thought I'd found the antidote this time ", "chords": [{ "id": "v1-3-fmaj7", "symbol": "Fmaj7", "anchor": { "graphemeOffset": 24 } }, { "id": "v1-3-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 43 } }] },
+        { "id": "v1-4", "type": "lyrics", "text": "I thought I'd found the antidote this time ", "chords": [{ "id": "v1-4-fmaj7", "symbol": "Fmaj7", "anchor": { "graphemeOffset": 24 } }, { "id": "v1-4-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 43 } }] }
+      ]
+    },
+    {
+      "id": "verse-2", "type": "verse", "label": "Verse 2", "lines": [
+        { "id": "v2-1", "type": "lyrics", "text": "All the nights I spent fighting bad thoughts in my room", "chords": [{ "id": "v2-1-asus2", "symbol": "Asus2", "anchor": { "graphemeOffset": 0 } }, { "id": "v2-1-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 51 } }] },
+        { "id": "v2-2", "type": "lyrics", "text": "Feeling so alone, might as well be on the moon", "chords": [{ "id": "v2-2-asus2", "symbol": "Asus2", "anchor": { "graphemeOffset": 12 } }, { "id": "v2-2-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 42 } }] },
+        { "id": "v2-3", "type": "lyrics", "text": "I thought I'd found the antidote with you ", "chords": [{ "id": "v2-3-fmaj7", "symbol": "Fmaj7", "anchor": { "graphemeOffset": 24 } }, { "id": "v2-3-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 42 } }] },
+        { "id": "v2-4", "type": "lyrics", "text": "I thought I'd found the antidote with you ", "chords": [{ "id": "v2-4-fmaj7", "symbol": "Fmaj7", "anchor": { "graphemeOffset": 24 } }, { "id": "v2-4-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 42 } }] }
+      ]
+    },
+    {
+      "id": "chorus-1", "type": "chorus", "label": "Chorus", "lines": [
+        { "id": "c1-1", "type": "lyrics", "text": "But my head is full of poison, and my heart is full of doubt", "chords": [{ "id": "c1-1-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 7 } }, { "id": "c1-1-f", "symbol": "F", "anchor": { "graphemeOffset": 38 } }] },
+        { "id": "c1-2", "type": "lyrics", "text": "I got toxins in my bloodstream, you tried hard to suck 'em out", "chords": [{ "id": "c1-2-c", "symbol": "C", "anchor": { "graphemeOffset": 6 } }, { "id": "c1-2-gb", "symbol": "G/B", "anchor": { "graphemeOffset": 42 } }] },
+        { "id": "c1-3", "type": "lyrics", "text": "And it feels like medication, and it's good for me, I'm sure", "chords": [{ "id": "c1-3-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 7 } }, { "id": "c1-3-f", "symbol": "F", "anchor": { "graphemeOffset": 39 } }] },
+        { "id": "c1-4", "type": "lyrics", "text": "But it don't matter how your love feels anymore ", "chords": [{ "id": "c1-4-c", "symbol": "C", "anchor": { "graphemeOffset": 13 } }, { "id": "c1-4-gb", "symbol": "G/B", "anchor": { "graphemeOffset": 48 } }] },
+        { "id": "c1-5", "type": "lyrics", "text": "It'll never be the cure ", "chords": [{ "id": "c1-5-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 19 } }, { "id": "c1-5-f", "symbol": "F", "anchor": { "graphemeOffset": 24 } }] },
+        { "id": "c1-6", "type": "lyrics", "text": "It'll never be the cure ", "review": { "confidence": "low", "status": "unreviewed", "reasons": ["contentConflict"], "note": "The PDF uses visually identical non-ASCII e glyphs; this test package normalizes the intended English words." }, "chords": [{ "id": "c1-6-c", "symbol": "C", "anchor": { "graphemeOffset": 19 } }, { "id": "c1-6-gb", "symbol": "G/B", "anchor": { "graphemeOffset": 24 } }] }
+      ]
+    },
+    {
+      "id": "verse-3", "type": "verse", "label": "Verse 3", "lines": [
+        { "id": "v3-1", "type": "lyrics", "text": "I used to play a game in my head when I'd date a guy", "chords": [{ "id": "v3-1-asus2", "symbol": "Asus2", "anchor": { "graphemeOffset": 2 } }, { "id": "v3-1-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 49 } }] },
+        { "id": "v3-2", "type": "lyrics", "text": "Tally up the girls that he fucked 'til I start to cry", "chords": [{ "id": "v3-2-asus2", "symbol": "Asus2", "anchor": { "graphemeOffset": 0 } }, { "id": "v3-2-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 50 } }] },
+        { "id": "v3-3", "type": "lyrics", "text": "I thought I'd found the antidote this time ", "chords": [{ "id": "v3-3-fmaj7", "symbol": "Fmaj7", "anchor": { "graphemeOffset": 24 } }, { "id": "v3-3-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 43 } }] },
+        { "id": "v3-4", "type": "lyrics", "text": "I thought I'd found the antidote this time", "chords": [{ "id": "v3-4-fmaj7", "symbol": "Fmaj7", "anchor": { "graphemeOffset": 24 } }, { "id": "v3-4-cmaj7", "symbol": "Cmaj7", "anchor": { "graphemeOffset": 38 } }] }
+      ]
+    },
+    {
+      "id": "refrain-1", "type": "refrain", "label": "Refrain", "lines": [
+        { "id": "r1-1", "type": "lyrics", "text": "But I'm unraveled (I'm unraveled)", "chords": [{ "id": "r1-1-f", "symbol": "F", "anchor": { "graphemeOffset": 10 } }] },
+        { "id": "r1-2", "type": "lyrics", "text": "I'm unraveled (I'm unraveled)", "chords": [{ "id": "r1-2-c", "symbol": "C", "anchor": { "graphemeOffset": 6 } }, { "id": "r1-2-g", "symbol": "G", "anchor": { "graphemeOffset": 21 } }] },
+        { "id": "r1-3", "type": "lyrics", "text": "I'm unraveled (I'm unraveled)", "chords": [{ "id": "r1-3-f", "symbol": "F", "anchor": { "graphemeOffset": 6 } }] },
+        { "id": "r1-4", "type": "lyrics", "text": "I'm unraveled (I'm unraveled)", "chords": [{ "id": "r1-4-c", "symbol": "C", "anchor": { "graphemeOffset": 6 } }, { "id": "r1-4-g", "symbol": "G", "anchor": { "graphemeOffset": 21 } }] }
+      ]
+    },
+    {
+      "id": "chorus-2", "type": "chorus", "label": "Chorus", "lines": [
+        { "id": "c2-1", "type": "lyrics", "text": "And my head is full of poison, and my heart is full of doubt", "chords": [{ "id": "c2-1-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 7 } }, { "id": "c2-1-f", "symbol": "F", "anchor": { "graphemeOffset": 38 } }] },
+        { "id": "c2-2", "type": "lyrics", "text": "I got toxins in my bloodstream, you tried hard to suck 'em out", "chords": [{ "id": "c2-2-c", "symbol": "C", "anchor": { "graphemeOffset": 6 } }, { "id": "c2-2-gb", "symbol": "G/B", "anchor": { "graphemeOffset": 42 } }] },
+        { "id": "c2-3", "type": "lyrics", "text": "And it feels like medication, and it's good for me, I'm sure", "chords": [{ "id": "c2-3-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 7 } }, { "id": "c2-3-f", "symbol": "F", "anchor": { "graphemeOffset": 39 } }] },
+        { "id": "c2-4", "type": "lyrics", "text": "But it don't matter how your love feels anymore", "chords": [{ "id": "c2-4-c", "symbol": "C", "anchor": { "graphemeOffset": 13 } }, { "id": "c2-4-gb", "symbol": "G/B", "anchor": { "graphemeOffset": 47 } }] },
+        { "id": "c2-5", "type": "lyrics", "text": "It'll never be the cure ", "chords": [{ "id": "c2-5-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 19 } }, { "id": "c2-5-f", "symbol": "F", "anchor": { "graphemeOffset": 24 } }] },
+        { "id": "c2-6", "type": "lyrics", "text": "It'll never be the cure, oh", "chords": [{ "id": "c2-6-c", "symbol": "C", "anchor": { "graphemeOffset": 19 } }, { "id": "c2-6-gb", "symbol": "G/B", "anchor": { "graphemeOffset": 24 } }] }
+      ]
+    },
+    {
+      "id": "refrain-2", "type": "refrain", "label": "Refrain", "lines": [
+        { "id": "r2-1", "type": "lyrics", "text": "'Cause, baby, I'm unraveled (I'm unraveled)", "chords": [{ "id": "r2-1-f", "symbol": "F", "anchor": { "graphemeOffset": 20 } }] },
+        { "id": "r2-2", "type": "lyrics", "text": "I'm unraveled (I'm unraveled)", "chords": [{ "id": "r2-2-c", "symbol": "C", "anchor": { "graphemeOffset": 6 } }, { "id": "r2-2-g", "symbol": "G", "anchor": { "graphemeOffset": 21 } }] },
+        { "id": "r2-3", "type": "lyrics", "text": "I'm unraveled (I'm unraveled)", "chords": [{ "id": "r2-3-f", "symbol": "F", "anchor": { "graphemeOffset": 6 } }] },
+        { "id": "r2-4", "type": "lyrics", "text": "I'm unraveled (I'm unraveled, I'm unraveled)", "chords": [{ "id": "r2-4-c", "symbol": "C", "anchor": { "graphemeOffset": 6 } }, { "id": "r2-4-g", "symbol": "G", "anchor": { "graphemeOffset": 21 } }, { "id": "r2-4-f", "symbol": "F", "anchor": { "graphemeOffset": 36 } }] }
+      ]
+    },
+    {
+      "id": "bridge", "type": "bridge", "label": "Bridge", "lines": [
+        { "id": "b-1", "type": "lyrics", "text": "Why can't you come stitch me up? (I'm unraveled)", "chords": [{ "id": "b-1-c", "symbol": "C", "anchor": { "graphemeOffset": 29 } }] },
+        { "id": "b-2", "type": "lyrics", "text": "Why can't it ever be enough? (I'm unraveled)", "chords": [{ "id": "b-2-g", "symbol": "G", "anchor": { "graphemeOffset": 13 } }, { "id": "b-2-f", "symbol": "F", "anchor": { "graphemeOffset": 22 } }] },
+        { "id": "b-3", "type": "lyrics", "text": "Why can't you come stitch me up? (I'm unraveled)", "chords": [{ "id": "b-3-c", "symbol": "C", "anchor": { "graphemeOffset": 29 } }] },
+        { "id": "b-4", "type": "lyrics", "text": "Why can't it ever be enough?", "chords": [{ "id": "b-4-g", "symbol": "G", "anchor": { "graphemeOffset": 13 } }, { "id": "b-4-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 22 } }] },
+        { "id": "b-5", "type": "lyrics", "text": "Ooh-oh", "chords": [{ "id": "b-5-f", "symbol": "F", "anchor": { "graphemeOffset": 4 } }] },
+        { "id": "b-6", "type": "lyrics", "text": "It's not enough ", "chords": [{ "id": "b-6-c", "symbol": "C", "anchor": { "graphemeOffset": 10 } }, { "id": "b-6-gb", "symbol": "G/B", "anchor": { "graphemeOffset": 16 } }] }
+      ]
+    },
+    {
+      "id": "chorus-3", "type": "chorus", "label": "Chorus", "lines": [
+        { "id": "c3-1", "type": "lyrics", "text": "All because my head is full of poison, and my heart is full of doubt (I'm unraveled)", "chords": [{ "id": "c3-1-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 15 } }, { "id": "c3-1-f", "symbol": "F", "anchor": { "graphemeOffset": 46 } }] },
+        { "id": "c3-2", "type": "lyrics", "text": "I got toxins in my bloodstream, you tried so hard to suck out (I'm unraveled)", "chords": [{ "id": "c3-2-c", "symbol": "C", "anchor": { "graphemeOffset": 6 } }, { "id": "c3-2-gb", "symbol": "G/B", "anchor": { "graphemeOffset": 42 } }] },
+        { "id": "c3-3", "type": "lyrics", "text": "And it feels like medication, and it's good for me, I'm sure (I'm unraveled)", "chords": [{ "id": "c3-3-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 7 } }, { "id": "c3-3-f", "symbol": "F", "anchor": { "graphemeOffset": 39 } }] },
+        { "id": "c3-4", "type": "lyrics", "text": "But it don't matter how your love feels anymore (I'm unraveled)", "chords": [{ "id": "c3-4-c", "symbol": "C", "anchor": { "graphemeOffset": 13 } }, { "id": "c3-4-gb", "symbol": "G/B", "anchor": { "graphemeOffset": 47 } }] },
+        { "id": "c3-5", "type": "lyrics", "text": "It'll never be the cure ", "chords": [{ "id": "c3-5-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 19 } }, { "id": "c3-5-f", "symbol": "F", "anchor": { "graphemeOffset": 24 } }] },
+        { "id": "c3-6", "type": "lyrics", "text": "It will never be the cure ", "chords": [{ "id": "c3-6-c", "symbol": "C", "anchor": { "graphemeOffset": 21 } }, { "id": "c3-6-gb", "symbol": "G/B", "anchor": { "graphemeOffset": 26 } }] },
+        { "id": "c3-7", "type": "lyrics", "text": "It'll never be", "chords": [] }
+      ]
+    },
+    {
+      "id": "outro", "type": "outro", "label": "Outro", "lines": [
+        { "id": "outro-1", "type": "chords", "chords": [{ "id": "outro-1-dm", "symbol": "Dm" }, { "id": "outro-1-f", "symbol": "F" }, { "id": "outro-1-c", "symbol": "C" }, { "id": "outro-1-gb", "symbol": "G/B" }] },
+        { "id": "outro-2", "type": "chords", "chords": [{ "id": "outro-2-dm", "symbol": "Dm" }, { "id": "outro-2-f", "symbol": "F" }, { "id": "outro-2-c", "symbol": "C" }, { "id": "outro-2-gb", "symbol": "G/B" }] }
+      ]
+    }
+  ],
+  "voicings": [],
+  "rhythm": { "tempoBpm": 144 }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ChordSheet Builder"
+  short_description: "Build validated editable chord-sheet bundles."
+  default_prompt: "Use $chordsheet to turn supplied chord sources into a validated .chordsheet package."

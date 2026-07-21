@@ -1,0 +1,636 @@
+{
+  "format": "chordsheet",
+  "formatVersion": "1.0.0",
+  "documentId": "purple-olivia-rodrigo",
+  "generator": {
+    "name": "ChordSheet Builder",
+    "version": "1.0.0"
+  },
+  "metadata": {
+    "title": "Purple",
+    "artist": "Olivia Rodrigo",
+    "language": "en",
+    "difficulty": "intermediate",
+    "baseWrittenKey": "D",
+    "instrument": {
+      "type": "guitar",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"]
+    }
+  },
+  "view": {
+    "transposeSemitones": 0,
+    "capo": 0,
+    "fontScale": 1,
+    "chordDisplay": "nameAndDiagram"
+  },
+  "sources": [
+    {
+      "id": "source-purple-pdf",
+      "kind": "pdf",
+      "role": "both",
+      "originalName": "Purple Chords by Olivia Rodrigotabs @ Ultimate Guitar Archive.pdf",
+      "mimeType": "application/pdf",
+      "pageCount": 3,
+      "embedded": false,
+      "sha256": "74311cfd150c7a26542e5dbdd69a532387b15f810b33d2b7f3faa8580c14d964"
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-intro",
+      "type": "intro",
+      "label": "Intro",
+      "review": { "confidence": "high", "status": "confirmed" },
+      "lines": [
+        {
+          "id": "line-intro-1",
+          "type": "chords",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-intro-1-bm", "symbol": "Bm", "voicingId": "voicing-bm" },
+            { "id": "ch-intro-1-g", "symbol": "G", "voicingId": "voicing-g" },
+            { "id": "ch-intro-1-em", "symbol": "Em", "voicingId": "voicing-em" },
+            { "id": "ch-intro-1-a", "symbol": "A", "voicingId": "voicing-a" }
+          ]
+        },
+        {
+          "id": "line-intro-2",
+          "type": "chords",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-intro-2-bm", "symbol": "Bm", "voicingId": "voicing-bm" },
+            { "id": "ch-intro-2-g", "symbol": "G", "voicingId": "voicing-g" },
+            { "id": "ch-intro-2-em", "symbol": "Em", "voicingId": "voicing-em" },
+            { "id": "ch-intro-2-a", "symbol": "A", "voicingId": "voicing-a" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-verse-1",
+      "type": "verse",
+      "label": "Verse 1",
+      "review": { "confidence": "high", "status": "confirmed" },
+      "lines": [
+        {
+          "id": "line-v1-1",
+          "type": "lyrics",
+          "text": "It's funny ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-v1-1-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 5 }, "voicingId": "voicing-bm" },
+            { "id": "ch-v1-1-g", "symbol": "G", "anchor": { "graphemeOffset": 11 }, "voicingId": "voicing-g" }
+          ]
+        },
+        {
+          "id": "line-v1-2",
+          "type": "lyrics",
+          "text": "When your mom shows pictures of you in your   school clothes   ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-v1-2-em-1", "symbol": "Em", "anchor": { "graphemeOffset": 10 }, "voicingId": "voicing-em" },
+            { "id": "ch-v1-2-a-1", "symbol": "A", "anchor": { "graphemeOffset": 29 }, "voicingId": "voicing-a" },
+            { "id": "ch-v1-2-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 43 }, "voicingId": "voicing-bm" },
+            { "id": "ch-v1-2-g", "symbol": "G", "anchor": { "graphemeOffset": 46 }, "voicingId": "voicing-g" },
+            { "id": "ch-v1-2-em-2", "symbol": "Em", "anchor": { "graphemeOffset": 60 }, "voicingId": "voicing-em" },
+            { "id": "ch-v1-2-a-2", "symbol": "A", "anchor": { "graphemeOffset": 63 }, "voicingId": "voicing-a" }
+          ]
+        },
+        {
+          "id": "line-v1-3",
+          "type": "lyrics",
+          "text": "Your buzzcut",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-v1-3-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 5 }, "voicingId": "voicing-bm" },
+            { "id": "ch-v1-3-g", "symbol": "G", "anchor": { "graphemeOffset": 12 }, "voicingId": "voicing-g" }
+          ]
+        },
+        {
+          "id": "line-v1-4",
+          "type": "lyrics",
+          "text": "And scrapes on your knees changed, but those eyes I  still know    ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-v1-4-em-1", "symbol": "Em", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-em" },
+            { "id": "ch-v1-4-a-1", "symbol": "A", "anchor": { "graphemeOffset": 26 }, "voicingId": "voicing-a" },
+            { "id": "ch-v1-4-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 50 }, "voicingId": "voicing-bm" },
+            { "id": "ch-v1-4-g", "symbol": "G", "anchor": { "graphemeOffset": 53 }, "voicingId": "voicing-g" },
+            { "id": "ch-v1-4-em-2", "symbol": "Em", "anchor": { "graphemeOffset": 64 }, "voicingId": "voicing-em" },
+            { "id": "ch-v1-4-a-2", "symbol": "A", "anchor": { "graphemeOffset": 67 }, "voicingId": "voicing-a" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-pre-chorus-1",
+      "type": "preChorus",
+      "label": "Pre-Chorus 1",
+      "review": { "confidence": "high", "status": "confirmed" },
+      "lines": [
+        {
+          "id": "line-pc1-1",
+          "type": "lyrics",
+          "text": "And it's crazy (It's crazy)",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-pc1-1-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 9 }, "voicingId": "voicing-bm" },
+            { "id": "ch-pc1-1-g", "symbol": "G", "anchor": { "graphemeOffset": 21 }, "voicingId": "voicing-g" }
+          ]
+        },
+        {
+          "id": "line-pc1-2",
+          "type": "lyrics",
+          "text": "How I used to visit your town like a   tourist    ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-pc1-2-em-1", "symbol": "Em", "anchor": { "graphemeOffset": 6 }, "voicingId": "voicing-em" },
+            { "id": "ch-pc1-2-a-1", "symbol": "A", "anchor": { "graphemeOffset": 20 }, "voicingId": "voicing-a" },
+            { "id": "ch-pc1-2-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 36 }, "voicingId": "voicing-bm" },
+            { "id": "ch-pc1-2-g", "symbol": "G", "anchor": { "graphemeOffset": 43 }, "voicingId": "voicing-g" },
+            { "id": "ch-pc1-2-em-2", "symbol": "Em", "anchor": { "graphemeOffset": 47 }, "voicingId": "voicing-em" },
+            { "id": "ch-pc1-2-a-2", "symbol": "A", "anchor": { "graphemeOffset": 50 }, "voicingId": "voicing-a" }
+          ]
+        },
+        {
+          "id": "line-pc1-3",
+          "type": "lyrics",
+          "text": "Now I got (I got)",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-pc1-3-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-bm" },
+            { "id": "ch-pc1-3-g", "symbol": "G", "anchor": { "graphemeOffset": 13 }, "voicingId": "voicing-g" }
+          ]
+        },
+        {
+          "id": "line-pc1-4",
+          "type": "lyrics",
+          "text": "A local grocery store and a favorite  florist",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-pc1-4-em-1", "symbol": "Em", "anchor": { "graphemeOffset": 2 }, "voicingId": "voicing-em" },
+            { "id": "ch-pc1-4-a-1", "symbol": "A", "anchor": { "graphemeOffset": 16 }, "voicingId": "voicing-a" },
+            { "id": "ch-pc1-4-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 36 }, "voicingId": "voicing-bm" },
+            { "id": "ch-pc1-4-g", "symbol": "G", "anchor": { "graphemeOffset": 42 }, "voicingId": "voicing-g" },
+            { "id": "ch-pc1-4-em-2", "symbol": "Em", "anchor": { "graphemeOffset": 44 }, "voicingId": "voicing-em" }
+          ]
+        },
+        {
+          "id": "line-pc1-5",
+          "type": "lyrics",
+          "text": "And so it goes that",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-pc1-5-a", "symbol": "A", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-a" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-chorus-1",
+      "type": "chorus",
+      "label": "Chorus 1",
+      "review": { "confidence": "high", "status": "confirmed" },
+      "lines": [
+        {
+          "id": "line-c1-1",
+          "type": "lyrics",
+          "text": "You kissed my neck",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-c1-1-d", "symbol": "D", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-d" },
+            { "id": "ch-c1-1-g", "symbol": "G", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-g" }
+          ]
+        },
+        {
+          "id": "line-c1-2",
+          "type": "lyrics",
+          "text": "Made our paths intersect 'til the two lines formed a circle        ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-c1-2-c", "symbol": "C", "anchor": { "graphemeOffset": 9 }, "voicingId": "voicing-c" },
+            { "id": "ch-c1-2-g", "symbol": "G", "anchor": { "graphemeOffset": 33 }, "voicingId": "voicing-g" },
+            { "id": "ch-c1-2-d", "symbol": "D", "anchor": { "graphemeOffset": 52 }, "voicingId": "voicing-d" },
+            { "id": "ch-c1-2-d-f-sharp", "symbol": "D/F#", "anchor": { "graphemeOffset": 59 }, "voicingId": "voicing-d-f-sharp" },
+            { "id": "ch-c1-2-bb", "symbol": "Bb", "anchor": { "graphemeOffset": 64 }, "voicingId": "voicing-bb" },
+            { "id": "ch-c1-2-a", "symbol": "A", "anchor": { "graphemeOffset": 67 }, "voicingId": "voicing-a" }
+          ]
+        },
+        {
+          "id": "line-c1-3",
+          "type": "lyrics",
+          "text": "And I melt with you, your red and my blue",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-c1-3-d", "symbol": "D", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-d" },
+            { "id": "ch-c1-3-g", "symbol": "G", "anchor": { "graphemeOffset": 6 }, "voicingId": "voicing-g" },
+            { "id": "ch-c1-3-c", "symbol": "C", "anchor": { "graphemeOffset": 26 }, "voicingId": "voicing-c" }
+          ]
+        },
+        {
+          "id": "line-c1-4",
+          "type": "lyrics",
+          "text": "Now I see the world in purple,   purple ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-c1-4-g", "symbol": "G", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-g" },
+            { "id": "ch-c1-4-bb", "symbol": "Bb", "anchor": { "graphemeOffset": 22 }, "voicingId": "voicing-bb" },
+            { "id": "ch-c1-4-gdim", "symbol": "Gdim", "anchor": { "graphemeOffset": 29 }, "voicingId": "voicing-gdim" },
+            { "id": "ch-c1-4-d", "symbol": "D", "anchor": { "graphemeOffset": 40 }, "voicingId": "voicing-d" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-verse-2",
+      "type": "verse",
+      "label": "Verse 2",
+      "review": { "confidence": "high", "status": "confirmed" },
+      "lines": [
+        {
+          "id": "line-v2-1",
+          "type": "lyrics",
+          "text": "Now a toothbrush ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-v2-1-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 6 }, "voicingId": "voicing-bm" },
+            { "id": "ch-v2-1-g", "symbol": "G", "anchor": { "graphemeOffset": 17 }, "voicingId": "voicing-g" }
+          ]
+        },
+        {
+          "id": "line-v2-2",
+          "type": "lyrics",
+          "text": "A coat and pair of shoes all come in   doubles (Doubles, doubles, doubles)",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-v2-2-em-1", "symbol": "Em", "anchor": { "graphemeOffset": 2 }, "voicingId": "voicing-em" },
+            { "id": "ch-v2-2-a-1", "symbol": "A", "anchor": { "graphemeOffset": 19 }, "voicingId": "voicing-a" },
+            { "id": "ch-v2-2-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 36 }, "voicingId": "voicing-bm" },
+            { "id": "ch-v2-2-g", "symbol": "G", "anchor": { "graphemeOffset": 48 }, "voicingId": "voicing-g" },
+            { "id": "ch-v2-2-em-2", "symbol": "Em", "anchor": { "graphemeOffset": 66 }, "voicingId": "voicing-em" },
+            { "id": "ch-v2-2-a-2", "symbol": "A", "anchor": { "graphemeOffset": 74 }, "voicingId": "voicing-a" }
+          ]
+        },
+        {
+          "id": "line-v2-3",
+          "type": "lyrics",
+          "text": "And we fight ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-v2-3-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-bm" },
+            { "id": "ch-v2-3-g", "symbol": "G", "anchor": { "graphemeOffset": 13 }, "voicingId": "voicing-g" }
+          ]
+        },
+        {
+          "id": "line-v2-4",
+          "type": "lyrics",
+          "text": "Over who I'm hanging out with like a  real couple (Couple, couple, couple) ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-v2-4-em-1", "symbol": "Em", "anchor": { "graphemeOffset": 5 }, "voicingId": "voicing-em" },
+            { "id": "ch-v2-4-a-1", "symbol": "A", "anchor": { "graphemeOffset": 21 }, "voicingId": "voicing-a" },
+            { "id": "ch-v2-4-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 36 }, "voicingId": "voicing-bm" },
+            { "id": "ch-v2-4-g", "symbol": "G", "anchor": { "graphemeOffset": 43 }, "voicingId": "voicing-g" },
+            { "id": "ch-v2-4-em-2", "symbol": "Em", "anchor": { "graphemeOffset": 67 }, "voicingId": "voicing-em" },
+            { "id": "ch-v2-4-a-2", "symbol": "A", "anchor": { "graphemeOffset": 75 }, "voicingId": "voicing-a" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-pre-chorus-2",
+      "type": "preChorus",
+      "label": "Pre-Chorus 2",
+      "review": { "confidence": "high", "status": "confirmed" },
+      "lines": [
+        {
+          "id": "line-pc2-1",
+          "type": "lyrics",
+          "text": "It's a small world (It's a small world)",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-pc2-1-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 7 }, "voicingId": "voicing-bm" },
+            { "id": "ch-pc2-1-g", "symbol": "G", "anchor": { "graphemeOffset": 25 }, "voicingId": "voicing-g" }
+          ]
+        },
+        {
+          "id": "line-pc2-2",
+          "type": "lyrics",
+          "text": "When it only can revolve around us two    ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-pc2-2-em-1", "symbol": "Em", "anchor": { "graphemeOffset": 8 }, "voicingId": "voicing-em" },
+            { "id": "ch-pc2-2-a-1", "symbol": "A", "anchor": { "graphemeOffset": 19 }, "voicingId": "voicing-a" },
+            { "id": "ch-pc2-2-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 33 }, "voicingId": "voicing-bm" },
+            { "id": "ch-pc2-2-g", "symbol": "G", "anchor": { "graphemeOffset": 36 }, "voicingId": "voicing-g" },
+            { "id": "ch-pc2-2-em-2", "symbol": "Em", "anchor": { "graphemeOffset": 39 }, "voicingId": "voicing-em" },
+            { "id": "ch-pc2-2-a-2", "symbol": "A", "anchor": { "graphemeOffset": 42 }, "voicingId": "voicing-a" }
+          ]
+        },
+        {
+          "id": "line-pc2-3",
+          "type": "lyrics",
+          "text": "It's crazy (It's crazy)",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-pc2-3-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 5 }, "voicingId": "voicing-bm" },
+            { "id": "ch-pc2-3-g", "symbol": "G", "anchor": { "graphemeOffset": 17 }, "voicingId": "voicing-g" }
+          ]
+        },
+        {
+          "id": "line-pc2-4",
+          "type": "lyrics",
+          "text": "I had big dreams 'til I tied myself to you   ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-pc2-4-em", "symbol": "Em", "anchor": { "graphemeOffset": 6 }, "voicingId": "voicing-em" },
+            { "id": "ch-pc2-4-a", "symbol": "A", "anchor": { "graphemeOffset": 24 }, "voicingId": "voicing-a" },
+            { "id": "ch-pc2-4-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 39 }, "voicingId": "voicing-bm" },
+            { "id": "ch-pc2-4-g", "symbol": "G", "anchor": { "graphemeOffset": 43 }, "voicingId": "voicing-g" },
+            { "id": "ch-pc2-4-em-2", "symbol": "Em", "anchor": { "graphemeOffset": 45 }, "voicingId": "voicing-em" }
+          ]
+        },
+        {
+          "id": "line-pc2-5",
+          "type": "lyrics",
+          "text": "Now I'm all-consumed",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-pc2-5-a", "symbol": "A", "anchor": { "graphemeOffset": 8 }, "voicingId": "voicing-a" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-chorus-2",
+      "type": "chorus",
+      "label": "Chorus 2",
+      "review": { "confidence": "high", "status": "confirmed" },
+      "lines": [
+        {
+          "id": "line-c2-1",
+          "type": "lyrics",
+          "text": "And you kissed my neck",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-c2-1-d", "symbol": "D", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-d" },
+            { "id": "ch-c2-1-g", "symbol": "G", "anchor": { "graphemeOffset": 8 }, "voicingId": "voicing-g" }
+          ]
+        },
+        {
+          "id": "line-c2-2",
+          "type": "lyrics",
+          "text": "Made our paths intersect 'til the two lines formed a circle        ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-c2-2-c", "symbol": "C", "anchor": { "graphemeOffset": 9 }, "voicingId": "voicing-c" },
+            { "id": "ch-c2-2-g", "symbol": "G", "anchor": { "graphemeOffset": 33 }, "voicingId": "voicing-g" },
+            { "id": "ch-c2-2-d", "symbol": "D", "anchor": { "graphemeOffset": 52 }, "voicingId": "voicing-d" },
+            { "id": "ch-c2-2-d-f-sharp", "symbol": "D/F#", "anchor": { "graphemeOffset": 59 }, "voicingId": "voicing-d-f-sharp" },
+            { "id": "ch-c2-2-bb", "symbol": "Bb", "anchor": { "graphemeOffset": 64 }, "voicingId": "voicing-bb" },
+            { "id": "ch-c2-2-a", "symbol": "A", "anchor": { "graphemeOffset": 67 }, "voicingId": "voicing-a" }
+          ]
+        },
+        {
+          "id": "line-c2-3",
+          "type": "lyrics",
+          "text": "And I melt with you, your red and my blue",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-c2-3-d", "symbol": "D", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-d" },
+            { "id": "ch-c2-3-g", "symbol": "G", "anchor": { "graphemeOffset": 6 }, "voicingId": "voicing-g" },
+            { "id": "ch-c2-3-c", "symbol": "C", "anchor": { "graphemeOffset": 26 }, "voicingId": "voicing-c" }
+          ]
+        },
+        {
+          "id": "line-c2-4",
+          "type": "lyrics",
+          "text": "Now I see the world in purple,   purple   ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-c2-4-g-1", "symbol": "G", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-g" },
+            { "id": "ch-c2-4-bb", "symbol": "Bb", "anchor": { "graphemeOffset": 22 }, "voicingId": "voicing-bb" },
+            { "id": "ch-c2-4-gdim", "symbol": "Gdim", "anchor": { "graphemeOffset": 29 }, "voicingId": "voicing-gdim" },
+            { "id": "ch-c2-4-d", "symbol": "D", "anchor": { "graphemeOffset": 40 }, "voicingId": "voicing-d" },
+            { "id": "ch-c2-4-g-2", "symbol": "G", "anchor": { "graphemeOffset": 42 }, "voicingId": "voicing-g" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-post-chorus",
+      "type": "postChorus",
+      "label": "Post-Chorus",
+      "review": { "confidence": "high", "status": "confirmed" },
+      "lines": [
+        {
+          "id": "line-post-1",
+          "type": "lyrics",
+          "text": "I see the world in, I see the world in purple (Purple, purple, purple)",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-post-1-c", "symbol": "C", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-c" },
+            { "id": "ch-post-1-g", "symbol": "G", "anchor": { "graphemeOffset": 19 }, "voicingId": "voicing-g" },
+            { "id": "ch-post-1-d", "symbol": "D", "anchor": { "graphemeOffset": 37 }, "voicingId": "voicing-d" },
+            { "id": "ch-post-1-d-f-sharp", "symbol": "D/F#", "anchor": { "graphemeOffset": 45 }, "voicingId": "voicing-d-f-sharp" },
+            { "id": "ch-post-1-bb", "symbol": "Bb", "anchor": { "graphemeOffset": 63 }, "voicingId": "voicing-bb" },
+            { "id": "ch-post-1-a", "symbol": "A", "anchor": { "graphemeOffset": 70 }, "voicingId": "voicing-a" }
+          ]
+        },
+        {
+          "id": "line-post-2",
+          "type": "lyrics",
+          "text": "    I see the world in, I see the world in purple (Purple, purple, purple)",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-post-2-d", "symbol": "D", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-d" },
+            { "id": "ch-post-2-g-1", "symbol": "G", "anchor": { "graphemeOffset": 2 }, "voicingId": "voicing-g" },
+            { "id": "ch-post-2-c", "symbol": "C", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-c" },
+            { "id": "ch-post-2-g-2", "symbol": "G", "anchor": { "graphemeOffset": 23 }, "voicingId": "voicing-g" },
+            { "id": "ch-post-2-bb", "symbol": "Bb", "anchor": { "graphemeOffset": 42 }, "voicingId": "voicing-bb" },
+            { "id": "ch-post-2-gdim", "symbol": "Gdim", "anchor": { "graphemeOffset": 67 }, "voicingId": "voicing-gdim" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-outro",
+      "type": "outro",
+      "label": "Outro",
+      "review": { "confidence": "high", "status": "confirmed" },
+      "lines": [
+        {
+          "id": "line-outro-1",
+          "type": "lyrics",
+          "text": "Melt with you 'til it all turns black",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-outro-1-d", "symbol": "D", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-d" },
+            { "id": "ch-outro-1-d-f-sharp", "symbol": "D/F#", "anchor": { "graphemeOffset": 22 }, "voicingId": "voicing-d-f-sharp" }
+          ]
+        },
+        {
+          "id": "line-outro-2",
+          "type": "lyrics",
+          "text": "Are we so in love? Are we too attached?",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-outro-2-c", "symbol": "C", "anchor": { "graphemeOffset": 7 }, "voicingId": "voicing-c" },
+            { "id": "ch-outro-2-gm", "symbol": "Gm", "anchor": { "graphemeOffset": 26 }, "voicingId": "voicing-gm" }
+          ]
+        },
+        {
+          "id": "line-outro-3",
+          "type": "lyrics",
+          "text": "Melt with you 'til it all turns black",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-outro-3-d", "symbol": "D", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-d" },
+            { "id": "ch-outro-3-d-f-sharp", "symbol": "D/F#", "anchor": { "graphemeOffset": 22 }, "voicingId": "voicing-d-f-sharp" }
+          ]
+        },
+        {
+          "id": "line-outro-4",
+          "type": "lyrics",
+          "text": "When you smooth it out, but it feels too flat",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-outro-4-c", "symbol": "C", "anchor": { "graphemeOffset": 9 }, "voicingId": "voicing-c" },
+            { "id": "ch-outro-4-gm", "symbol": "Gm", "anchor": { "graphemeOffset": 31 }, "voicingId": "voicing-gm" }
+          ]
+        },
+        {
+          "id": "line-outro-5",
+          "type": "lyrics",
+          "text": "Melt with you 'til it all turns black",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-outro-5-d", "symbol": "D", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-d" },
+            { "id": "ch-outro-5-d-f-sharp", "symbol": "D/F#", "anchor": { "graphemeOffset": 22 }, "voicingId": "voicing-d-f-sharp" }
+          ]
+        },
+        {
+          "id": "line-outro-6",
+          "type": "lyrics",
+          "text": "When you get so close and you can't go back",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-outro-6-c", "symbol": "C", "anchor": { "graphemeOffset": 9 }, "voicingId": "voicing-c" },
+            { "id": "ch-outro-6-gm", "symbol": "Gm", "anchor": { "graphemeOffset": 30 }, "voicingId": "voicing-gm" }
+          ]
+        },
+        {
+          "id": "line-outro-7",
+          "type": "lyrics",
+          "text": "Melt with you 'til it all turns black",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-outro-7-d", "symbol": "D", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-d" },
+            { "id": "ch-outro-7-d-f-sharp", "symbol": "D/F#", "anchor": { "graphemeOffset": 22 }, "voicingId": "voicing-d-f-sharp" },
+            { "id": "ch-outro-7-c", "symbol": "C", "anchor": { "graphemeOffset": 32 }, "voicingId": "voicing-c" },
+            { "id": "ch-outro-7-bb", "symbol": "Bb", "anchor": { "graphemeOffset": 35 }, "voicingId": "voicing-bb" }
+          ]
+        },
+        {
+          "id": "line-outro-8",
+          "type": "lyrics",
+          "text": "Melt with you 'til it just feels sad    ",
+          "review": { "confidence": "high", "status": "confirmed" },
+          "chords": [
+            { "id": "ch-outro-8-d-1", "symbol": "D", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-d" },
+            { "id": "ch-outro-8-d-f-sharp", "symbol": "D/F#", "anchor": { "graphemeOffset": 22 }, "voicingId": "voicing-d-f-sharp" },
+            { "id": "ch-outro-8-c", "symbol": "C", "anchor": { "graphemeOffset": 36 }, "voicingId": "voicing-c" },
+            { "id": "ch-outro-8-g", "symbol": "G", "anchor": { "graphemeOffset": 38 }, "voicingId": "voicing-g" },
+            { "id": "ch-outro-8-d-2", "symbol": "D", "anchor": { "graphemeOffset": 40 }, "voicingId": "voicing-d" }
+          ]
+        }
+      ]
+    }
+  ],
+  "voicings": [
+    {
+      "id": "voicing-bm",
+      "chordSymbol": "Bm",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 2, 4, 4, 3, 2],
+      "baseFret": 2,
+      "barres": [{ "fromString": 2, "toString": 6, "fret": 2 }],
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Purple source PDF, page 1 CHORDS diagram: Bm" }
+    },
+    {
+      "id": "voicing-g",
+      "chordSymbol": "G",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [3, 2, 0, 0, 0, 3],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Purple source PDF, page 1 CHORDS diagram: G" }
+    },
+    {
+      "id": "voicing-em",
+      "chordSymbol": "Em",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [0, 2, 2, 0, 0, 0],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Purple source PDF, page 1 CHORDS diagram: Em" }
+    },
+    {
+      "id": "voicing-a",
+      "chordSymbol": "A",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 0, 2, 2, 2, 0],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Purple source PDF, page 1 CHORDS diagram: A" }
+    },
+    {
+      "id": "voicing-d",
+      "chordSymbol": "D",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, null, 0, 2, 3, 2],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Purple source PDF, page 1 CHORDS diagram: D" }
+    },
+    {
+      "id": "voicing-c",
+      "chordSymbol": "C",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 3, 2, 0, 1, 0],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Purple source PDF, page 1 CHORDS diagram: C" }
+    },
+    {
+      "id": "voicing-d-f-sharp",
+      "chordSymbol": "D/F#",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [2, 5, 4, 2, 3, 2],
+      "baseFret": 2,
+      "barres": [{ "fromString": 1, "toString": 6, "fret": 2 }],
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Purple source PDF, page 1 CHORDS diagram: D/F#" }
+    },
+    {
+      "id": "voicing-bb",
+      "chordSymbol": "Bb",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 1, 3, 3, 3, 1],
+      "baseFret": 1,
+      "barres": [{ "fromString": 2, "toString": 6, "fret": 1 }],
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Purple source PDF, page 1 CHORDS diagram: Bb" }
+    },
+    {
+      "id": "voicing-gdim",
+      "chordSymbol": "Gdim",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, null, 2, 3, 2, 3],
+      "baseFret": 2,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Purple source PDF, page 1 CHORDS diagram: Gdim" }
+    },
+    {
+      "id": "voicing-gm",
+      "chordSymbol": "Gm",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [3, 5, 5, 3, 3, 3],
+      "baseFret": 3,
+      "barres": [{ "fromString": 1, "toString": 6, "fret": 3 }],
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Purple source PDF, page 1 CHORDS diagram: Gm" }
+    }
+  ]
+}

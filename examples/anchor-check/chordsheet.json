@@ -1,0 +1,159 @@
+{
+  "format": "chordsheet",
+  "formatVersion": "1.0.0",
+  "documentId": "anchor-check",
+  "createdAt": "2026-07-17T00:00:00+08:00",
+  "updatedAt": "2026-07-17T00:00:00+08:00",
+  "generator": {
+    "name": "ChordSheet specification fixture",
+    "version": "1.0.0"
+  },
+  "metadata": {
+    "title": "Anchor Check",
+    "language": "en",
+    "difficulty": "beginner",
+    "baseWrittenKey": "C",
+    "instrument": {
+      "type": "guitar",
+      "tuning": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ]
+    }
+  },
+  "view": {
+    "transposeSemitones": 0,
+    "capo": 0,
+    "fontScale": 1,
+    "chordDisplay": "name"
+  },
+  "sources": [
+    {
+      "id": "source-text",
+      "kind": "copiedText",
+      "role": "both",
+      "originalName": "anchor-check.txt",
+      "mimeType": "text/plain",
+      "embedded": true,
+      "path": "sources/anchor-check.txt"
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-intro",
+      "type": "intro",
+      "label": "Intro",
+      "lines": [
+        {
+          "id": "line-intro-1",
+          "type": "chords",
+          "chords": [
+            {
+              "id": "chord-intro-c",
+              "symbol": "C",
+              "durationBeats": 4
+            },
+            {
+              "id": "chord-intro-gb",
+              "symbol": "G/B",
+              "durationBeats": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-verse-1",
+      "type": "verse",
+      "label": "Verse 1",
+      "rhythmPatternId": "pattern-basic",
+      "lines": [
+        {
+          "id": "line-verse-1",
+          "type": "lyrics",
+          "text": "Count one, two, three, four.",
+          "chords": [
+            {
+              "id": "chord-verse-c",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              },
+              "evidence": [
+                {
+                  "sourceId": "source-text"
+                }
+              ]
+            },
+            {
+              "id": "chord-verse-gb",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 11
+              },
+              "review": {
+                "confidence": "low",
+                "status": "unreviewed",
+                "reasons": [
+                  "positionConflict"
+                ],
+                "note": "This fixture intentionally demonstrates a review marker."
+              },
+              "evidence": [
+                {
+                  "sourceId": "source-text"
+                }
+              ]
+            },
+            {
+              "id": "chord-verse-fmaj7",
+              "symbol": "Fmaj7",
+              "anchor": {
+                "graphemeOffset": 23
+              },
+              "review": {
+                "confidence": "high",
+                "status": "corrected"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "voicings": [],
+  "rhythm": {
+    "timeSignature": {
+      "beatsPerMeasure": 4,
+      "beatUnit": 4
+    },
+    "tempoBpm": 96,
+    "patterns": [
+      {
+        "id": "pattern-basic",
+        "label": "Basic eighth notes",
+        "stepsPerMeasure": 8,
+        "events": [
+          {
+            "slot": 0,
+            "stroke": "down",
+            "accent": true
+          },
+          {
+            "slot": 1,
+            "stroke": "up",
+            "accent": false
+          }
+        ]
+      }
+    ]
+  }
+}

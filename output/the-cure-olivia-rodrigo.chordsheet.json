@@ -1,0 +1,1910 @@
+{
+  "format": "chordsheet",
+  "formatVersion": "1.0.0",
+  "documentId": "the-cure-olivia-rodrigo",
+  "createdAt": "2026-07-19T00:00:00+08:00",
+  "updatedAt": "2026-07-19T00:00:00+08:00",
+  "generator": {
+    "name": "ChordSheet Builder",
+    "version": "1.0.0"
+  },
+  "metadata": {
+    "title": "The Cure",
+    "artist": "Olivia Rodrigo",
+    "language": "en",
+    "difficulty": "beginner",
+    "baseWrittenKey": "C",
+    "instrument": {
+      "type": "guitar",
+      "tuning": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ]
+    }
+  },
+  "view": {
+    "transposeSemitones": 0,
+    "capo": 1,
+    "fontScale": 1,
+    "chordDisplay": "nameAndDiagram"
+  },
+  "sources": [
+    {
+      "id": "source-ultimate-guitar-pdf",
+      "kind": "pdf",
+      "role": "both",
+      "originalName": "The Cure Chords by Olivia Rodrigotabs @ Ultimate Guitar Archive.pdf",
+      "mimeType": "application/pdf",
+      "pageCount": 3,
+      "embedded": false
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-7",
+      "type": "intro",
+      "label": "Intro",
+      "lines": [
+        {
+          "id": "line-1",
+          "type": "chords",
+          "chords": [
+            {
+              "id": "chord-2",
+              "symbol": "Asus2",
+              "voicingId": "voicing-asus2",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-3",
+              "symbol": "Cmaj7",
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-4",
+          "type": "chords",
+          "chords": [
+            {
+              "id": "chord-5",
+              "symbol": "Asus2",
+              "voicingId": "voicing-asus2",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-6",
+              "symbol": "Cmaj7",
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-20",
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "id": "line-8",
+          "type": "lyrics",
+          "text": "All the pretty girls in the foreground of my mind",
+          "chords": [
+            {
+              "id": "chord-9",
+              "symbol": "Asus2",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "voicingId": "voicing-asus2",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-10",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 45
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-11",
+          "type": "lyrics",
+          "text": "I thought I'd done enough, but they keep moving the line",
+          "chords": [
+            {
+              "id": "chord-12",
+              "symbol": "Asus2",
+              "anchor": {
+                "graphemeOffset": 2
+              },
+              "voicingId": "voicing-asus2",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-13",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 52
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-14",
+          "type": "lyrics",
+          "text": "I thought I'd found the antidote this time",
+          "chords": [
+            {
+              "id": "chord-15",
+              "symbol": "Fmaj7",
+              "anchor": {
+                "graphemeOffset": 24
+              },
+              "voicingId": "voicing-fmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-16",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 38
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-17",
+          "type": "lyrics",
+          "text": "I thought I'd found the antidote this time",
+          "chords": [
+            {
+              "id": "chord-18",
+              "symbol": "Fmaj7",
+              "anchor": {
+                "graphemeOffset": 24
+              },
+              "voicingId": "voicing-fmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-19",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 38
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-33",
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "id": "line-21",
+          "type": "lyrics",
+          "text": "All the nights I spent fighting bad thoughts in my room",
+          "chords": [
+            {
+              "id": "chord-22",
+              "symbol": "Asus2",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "voicingId": "voicing-asus2",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-23",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 51
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-24",
+          "type": "lyrics",
+          "text": "Feeling so alone, might as well be on the moon",
+          "chords": [
+            {
+              "id": "chord-25",
+              "symbol": "Asus2",
+              "anchor": {
+                "graphemeOffset": 8
+              },
+              "voicingId": "voicing-asus2",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-26",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 42
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-27",
+          "type": "lyrics",
+          "text": "I thought I'd found the antidote with you",
+          "chords": [
+            {
+              "id": "chord-28",
+              "symbol": "Fmaj7",
+              "anchor": {
+                "graphemeOffset": 24
+              },
+              "voicingId": "voicing-fmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-29",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 38
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-30",
+          "type": "lyrics",
+          "text": "I thought I'd found the antidote with you",
+          "chords": [
+            {
+              "id": "chord-31",
+              "symbol": "Fmaj7",
+              "anchor": {
+                "graphemeOffset": 24
+              },
+              "voicingId": "voicing-fmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-32",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 38
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-52",
+      "type": "chorus",
+      "label": "Chorus",
+      "lines": [
+        {
+          "id": "line-34",
+          "type": "lyrics",
+          "text": "But my head is full of poison, and my heart is full of doubt",
+          "chords": [
+            {
+              "id": "chord-35",
+              "symbol": "Dm",
+              "anchor": {
+                "graphemeOffset": 7
+              },
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-36",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 55
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-37",
+          "type": "lyrics",
+          "text": "I got toxins in my bloodstream, you tried hard to suck 'em out",
+          "chords": [
+            {
+              "id": "chord-38",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 6
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-39",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 32
+              },
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-40",
+          "type": "lyrics",
+          "text": "And it feels like medication, and it's good for me, I'm sure",
+          "chords": [
+            {
+              "id": "chord-41",
+              "symbol": "Dm",
+              "anchor": {
+                "graphemeOffset": 7
+              },
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-42",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 30
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-43",
+          "type": "lyrics",
+          "text": "But it don't matter how your love feels anymore",
+          "chords": [
+            {
+              "id": "chord-44",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 13
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-45",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 40
+              },
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-46",
+          "type": "lyrics",
+          "text": "It'll never be the cure",
+          "chords": [
+            {
+              "id": "chord-47",
+              "symbol": "Dm",
+              "anchor": {
+                "graphemeOffset": 19
+              },
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-48",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 23
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-49",
+          "type": "lyrics",
+          "text": "It'll never be the cure",
+          "chords": [
+            {
+              "id": "chord-50",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 19
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-51",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 23
+              },
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-65",
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "id": "line-53",
+          "type": "lyrics",
+          "text": "I used to play a game in my head when I'd date a guy",
+          "chords": [
+            {
+              "id": "chord-54",
+              "symbol": "Asus2",
+              "anchor": {
+                "graphemeOffset": 2
+              },
+              "voicingId": "voicing-asus2",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-55",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 49
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-56",
+          "type": "lyrics",
+          "text": "Tally up the girls that he fucked 'til I start to cry",
+          "chords": [
+            {
+              "id": "chord-57",
+              "symbol": "Asus2",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "voicingId": "voicing-asus2",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-58",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 50
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-59",
+          "type": "lyrics",
+          "text": "I thought I'd found the antidote this time",
+          "chords": [
+            {
+              "id": "chord-60",
+              "symbol": "Fmaj7",
+              "anchor": {
+                "graphemeOffset": 24
+              },
+              "voicingId": "voicing-fmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-61",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 38
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-62",
+          "type": "lyrics",
+          "text": "I thought I'd found the antidote this time",
+          "chords": [
+            {
+              "id": "chord-63",
+              "symbol": "Fmaj7",
+              "anchor": {
+                "graphemeOffset": 24
+              },
+              "voicingId": "voicing-fmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-64",
+              "symbol": "Cmaj7",
+              "anchor": {
+                "graphemeOffset": 38
+              },
+              "voicingId": "voicing-cmaj7",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-76",
+      "type": "refrain",
+      "label": "Refrain",
+      "lines": [
+        {
+          "id": "line-66",
+          "type": "lyrics",
+          "text": "But I'm unraveled (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-67",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 8
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-68",
+          "type": "lyrics",
+          "text": "I'm unraveled (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-69",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-70",
+              "symbol": "G",
+              "anchor": {
+                "graphemeOffset": 14
+              },
+              "voicingId": "voicing-g",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-71",
+          "type": "lyrics",
+          "text": "I'm unraveled (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-72",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-73",
+          "type": "lyrics",
+          "text": "I'm unraveled (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-74",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-75",
+              "symbol": "G",
+              "anchor": {
+                "graphemeOffset": 14
+              },
+              "voicingId": "voicing-g",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-95",
+      "type": "chorus",
+      "label": "Chorus",
+      "lines": [
+        {
+          "id": "line-77",
+          "type": "lyrics",
+          "text": "And my head is full of poison, and my heart is full of doubt",
+          "chords": [
+            {
+              "id": "chord-78",
+              "symbol": "Dm",
+              "anchor": {
+                "graphemeOffset": 7
+              },
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-79",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 55
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-80",
+          "type": "lyrics",
+          "text": "I got toxins in my bloodstream, you tried hard to suck 'em out",
+          "chords": [
+            {
+              "id": "chord-81",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 6
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-82",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 32
+              },
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-83",
+          "type": "lyrics",
+          "text": "And it feels like medication, and it's good for me, I'm sure",
+          "chords": [
+            {
+              "id": "chord-84",
+              "symbol": "Dm",
+              "anchor": {
+                "graphemeOffset": 7
+              },
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-85",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 30
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-86",
+          "type": "lyrics",
+          "text": "But it don't matter how your love feels anymore",
+          "chords": [
+            {
+              "id": "chord-87",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 13
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-88",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 40
+              },
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-89",
+          "type": "lyrics",
+          "text": "It'll never be the cure",
+          "chords": [
+            {
+              "id": "chord-90",
+              "symbol": "Dm",
+              "anchor": {
+                "graphemeOffset": 19
+              },
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-91",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 23
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-92",
+          "type": "lyrics",
+          "text": "It'll never be the cure, oh",
+          "chords": [
+            {
+              "id": "chord-93",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 19
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-94",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 27
+              },
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-106",
+      "type": "refrain",
+      "label": "Refrain",
+      "lines": [
+        {
+          "id": "line-96",
+          "type": "lyrics",
+          "text": "'Cause, baby, I'm unraveled (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-97",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 18
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-98",
+          "type": "lyrics",
+          "text": "I'm unraveled (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-99",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-100",
+              "symbol": "G",
+              "anchor": {
+                "graphemeOffset": 14
+              },
+              "voicingId": "voicing-g",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-101",
+          "type": "lyrics",
+          "text": "I'm unraveled (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-102",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-103",
+          "type": "lyrics",
+          "text": "I'm unraveled (I'm unraveled, I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-104",
+              "symbol": "G",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "voicingId": "voicing-g",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-105",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 4
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "low",
+                "status": "unreviewed",
+                "reasons": [
+                  "unclearSource",
+                  "inferred"
+                ],
+                "note": "The source places the F between the opening pronoun and first 'unraveled'; its exact word boundary is not fully legible."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-122",
+      "type": "bridge",
+      "label": "Bridge",
+      "lines": [
+        {
+          "id": "line-107",
+          "type": "lyrics",
+          "text": "Why can't you come stitch me up? (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-108",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 29
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-109",
+          "type": "lyrics",
+          "text": "Why can't it ever be enough? (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-110",
+              "symbol": "G",
+              "anchor": {
+                "graphemeOffset": 13
+              },
+              "voicingId": "voicing-g",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-111",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 21
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-112",
+          "type": "lyrics",
+          "text": "Why can't you come stitch me up? (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-113",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 29
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-114",
+          "type": "lyrics",
+          "text": "Why can't it ever be enough?",
+          "chords": [
+            {
+              "id": "chord-115",
+              "symbol": "G",
+              "anchor": {
+                "graphemeOffset": 13
+              },
+              "voicingId": "voicing-g",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-116",
+              "symbol": "Dm",
+              "anchor": {
+                "graphemeOffset": 21
+              },
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-117",
+          "type": "lyrics",
+          "text": "Ooh-oh",
+          "chords": [
+            {
+              "id": "chord-118",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 0
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-119",
+          "type": "lyrics",
+          "text": "It's not enough",
+          "chords": [
+            {
+              "id": "chord-120",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 5
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-121",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 9
+              },
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-142",
+      "type": "chorus",
+      "label": "Chorus",
+      "lines": [
+        {
+          "id": "line-123",
+          "type": "lyrics",
+          "text": "All because my head is full of poison, and my heart is full of doubt (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-124",
+              "symbol": "Dm",
+              "anchor": {
+                "graphemeOffset": 15
+              },
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-125",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 63
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-126",
+          "type": "lyrics",
+          "text": "I got toxins in my bloodstream, you tried so hard to suck out (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-127",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 6
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-128",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 42
+              },
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-129",
+          "type": "lyrics",
+          "text": "And it feels like medication, and it's good for me, I'm sure (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-130",
+              "symbol": "Dm",
+              "anchor": {
+                "graphemeOffset": 7
+              },
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-131",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 30
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-132",
+          "type": "lyrics",
+          "text": "But it don't matter how your love feels anymore (I'm unraveled)",
+          "chords": [
+            {
+              "id": "chord-133",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 13
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-134",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 48
+              },
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-135",
+          "type": "lyrics",
+          "text": "It'll never be the cure",
+          "chords": [
+            {
+              "id": "chord-136",
+              "symbol": "Dm",
+              "anchor": {
+                "graphemeOffset": 19
+              },
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-137",
+              "symbol": "F",
+              "anchor": {
+                "graphemeOffset": 23
+              },
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-138",
+          "type": "lyrics",
+          "text": "It will never be the cure",
+          "chords": [
+            {
+              "id": "chord-139",
+              "symbol": "C",
+              "anchor": {
+                "graphemeOffset": 21
+              },
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-140",
+              "symbol": "G/B",
+              "anchor": {
+                "graphemeOffset": 25
+              },
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-141",
+          "type": "lyrics",
+          "text": "It'll never be",
+          "chords": []
+        }
+      ]
+    },
+    {
+      "id": "section-153",
+      "type": "outro",
+      "label": "Outro",
+      "lines": [
+        {
+          "id": "line-143",
+          "type": "chords",
+          "chords": [
+            {
+              "id": "chord-144",
+              "symbol": "Dm",
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-145",
+              "symbol": "F",
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-146",
+              "symbol": "C",
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-147",
+              "symbol": "G/B",
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-148",
+          "type": "chords",
+          "chords": [
+            {
+              "id": "chord-149",
+              "symbol": "Dm",
+              "voicingId": "voicing-dm",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-150",
+              "symbol": "F",
+              "voicingId": "voicing-f",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-151",
+              "symbol": "C",
+              "voicingId": "voicing-c",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            },
+            {
+              "id": "chord-152",
+              "symbol": "G/B",
+              "voicingId": "voicing-g-b",
+              "review": {
+                "confidence": "high",
+                "status": "confirmed"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "voicings": [
+    {
+      "id": "voicing-asus2",
+      "chordSymbol": "Asus2",
+      "tuning": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ],
+      "frets": [
+        null,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "fingers": [
+        null,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "baseFret": 1,
+      "verification": {
+        "status": "verified",
+        "method": "sourceDiagram",
+        "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: Asus2"
+      }
+    },
+    {
+      "id": "voicing-cmaj7",
+      "chordSymbol": "Cmaj7",
+      "tuning": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ],
+      "frets": [
+        null,
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "fingers": [
+        null,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "baseFret": 1,
+      "verification": {
+        "status": "verified",
+        "method": "sourceDiagram",
+        "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: Cmaj7"
+      }
+    },
+    {
+      "id": "voicing-fmaj7",
+      "chordSymbol": "Fmaj7",
+      "tuning": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ],
+      "frets": [
+        null,
+        null,
+        3,
+        2,
+        1,
+        0
+      ],
+      "fingers": [
+        null,
+        null,
+        3,
+        2,
+        1,
+        0
+      ],
+      "baseFret": 1,
+      "verification": {
+        "status": "verified",
+        "method": "sourceDiagram",
+        "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: Fmaj7"
+      }
+    },
+    {
+      "id": "voicing-dm",
+      "chordSymbol": "Dm",
+      "tuning": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ],
+      "frets": [
+        null,
+        null,
+        0,
+        2,
+        3,
+        1
+      ],
+      "fingers": [
+        null,
+        null,
+        0,
+        2,
+        3,
+        1
+      ],
+      "baseFret": 1,
+      "verification": {
+        "status": "verified",
+        "method": "sourceDiagram",
+        "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: Dm"
+      }
+    },
+    {
+      "id": "voicing-f",
+      "chordSymbol": "F",
+      "tuning": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ],
+      "frets": [
+        1,
+        3,
+        3,
+        2,
+        1,
+        1
+      ],
+      "fingers": [
+        1,
+        3,
+        4,
+        2,
+        1,
+        1
+      ],
+      "baseFret": 1,
+      "barres": [
+        {
+          "fromString": 1,
+          "toString": 6,
+          "fret": 1,
+          "finger": 1
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "sourceDiagram",
+        "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: F"
+      }
+    },
+    {
+      "id": "voicing-c",
+      "chordSymbol": "C",
+      "tuning": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ],
+      "frets": [
+        null,
+        3,
+        2,
+        0,
+        1,
+        0
+      ],
+      "fingers": [
+        null,
+        3,
+        2,
+        0,
+        1,
+        0
+      ],
+      "baseFret": 1,
+      "verification": {
+        "status": "verified",
+        "method": "sourceDiagram",
+        "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: C"
+      }
+    },
+    {
+      "id": "voicing-g-b",
+      "chordSymbol": "G/B",
+      "tuning": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ],
+      "frets": [
+        null,
+        2,
+        0,
+        0,
+        0,
+        3
+      ],
+      "fingers": [
+        null,
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "baseFret": 1,
+      "verification": {
+        "status": "verified",
+        "method": "sourceDiagram",
+        "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: G/B"
+      }
+    },
+    {
+      "id": "voicing-g",
+      "chordSymbol": "G",
+      "tuning": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ],
+      "frets": [
+        3,
+        2,
+        0,
+        0,
+        0,
+        3
+      ],
+      "fingers": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      "baseFret": 1,
+      "verification": {
+        "status": "verified",
+        "method": "sourceDiagram",
+        "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: G"
+      }
+    }
+  ],
+  "rhythm": {
+    "tempoBpm": 144,
+    "patterns": [
+      {
+        "id": "main-pattern",
+        "label": "Main pattern",
+        "stepsPerMeasure": 16,
+        "events": [
+          {
+            "slot": 0,
+            "stroke": "down",
+            "accent": true
+          },
+          {
+            "slot": 1,
+            "stroke": "down"
+          },
+          {
+            "slot": 2,
+            "stroke": "down"
+          },
+          {
+            "slot": 3,
+            "stroke": "down"
+          },
+          {
+            "slot": 4,
+            "stroke": "down",
+            "accent": true
+          },
+          {
+            "slot": 5,
+            "stroke": "down"
+          },
+          {
+            "slot": 6,
+            "stroke": "down"
+          },
+          {
+            "slot": 7,
+            "stroke": "down"
+          },
+          {
+            "slot": 8,
+            "stroke": "down",
+            "accent": true
+          },
+          {
+            "slot": 9,
+            "stroke": "down"
+          },
+          {
+            "slot": 10,
+            "stroke": "down"
+          },
+          {
+            "slot": 11,
+            "stroke": "down"
+          },
+          {
+            "slot": 12,
+            "stroke": "down",
+            "accent": true
+          },
+          {
+            "slot": 13,
+            "stroke": "down"
+          },
+          {
+            "slot": 14,
+            "stroke": "down"
+          },
+          {
+            "slot": 15,
+            "stroke": "up"
+          }
+        ]
+      }
+    ]
+  }
+}

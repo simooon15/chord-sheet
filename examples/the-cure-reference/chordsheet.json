@@ -1,0 +1,140 @@
+{
+  "format": "chordsheet",
+  "formatVersion": "1.0.0",
+  "documentId": "the-cure-reference",
+  "createdAt": "2026-07-17T00:00:00+08:00",
+  "updatedAt": "2026-07-17T00:00:00+08:00",
+  "generator": {
+    "name": "ChordSheet reference fixture",
+    "version": "1.0.0"
+  },
+  "metadata": {
+    "title": "The Cure",
+    "artist": "Olivia Rodrigo",
+    "language": "en",
+    "difficulty": "beginner",
+    "baseWrittenKey": "C",
+    "instrument": {
+      "type": "guitar",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"]
+    }
+  },
+  "view": {
+    "transposeSemitones": 0,
+    "capo": 1,
+    "fontScale": 1,
+    "chordDisplay": "nameAndDiagram"
+  },
+  "sources": [
+    {
+      "id": "source-reference-pdf",
+      "kind": "pdf",
+      "role": "layout",
+      "originalName": "The Cure Chords by Olivia Rodrigotabs @ Ultimate Guitar Archive.pdf",
+      "mimeType": "application/pdf",
+      "pageCount": 3,
+      "embedded": false
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-intro",
+      "type": "intro",
+      "label": "Intro reference",
+      "lines": [
+        {
+          "id": "line-reference-chords",
+          "type": "chords",
+          "chords": [
+            { "id": "chord-asus2", "symbol": "Asus2", "durationBeats": 4, "voicingId": "voicing-asus2" },
+            { "id": "chord-cmaj7", "symbol": "Cmaj7", "durationBeats": 4, "voicingId": "voicing-cmaj7" },
+            { "id": "chord-fmaj7", "symbol": "Fmaj7", "durationBeats": 4, "voicingId": "voicing-fmaj7" },
+            { "id": "chord-dm", "symbol": "Dm", "durationBeats": 4, "voicingId": "voicing-dm" },
+            { "id": "chord-f", "symbol": "F", "durationBeats": 4, "voicingId": "voicing-f" },
+            { "id": "chord-c", "symbol": "C", "durationBeats": 4, "voicingId": "voicing-c" },
+            { "id": "chord-g-b", "symbol": "G/B", "durationBeats": 4, "voicingId": "voicing-g-b" },
+            { "id": "chord-g", "symbol": "G", "durationBeats": 4, "voicingId": "voicing-g" }
+          ]
+        }
+      ]
+    }
+  ],
+  "voicings": [
+    {
+      "id": "voicing-asus2",
+      "chordSymbol": "Asus2",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 0, 2, 2, 0, 0],
+      "fingers": [null, 0, 1, 2, 0, 0],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: Asus2" }
+    },
+    {
+      "id": "voicing-cmaj7",
+      "chordSymbol": "Cmaj7",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 3, 2, 0, 0, 0],
+      "fingers": [null, 2, 1, 0, 0, 0],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: Cmaj7" }
+    },
+    {
+      "id": "voicing-fmaj7",
+      "chordSymbol": "Fmaj7",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, null, 3, 2, 1, 0],
+      "fingers": [null, null, 3, 2, 1, 0],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: Fmaj7" }
+    },
+    {
+      "id": "voicing-dm",
+      "chordSymbol": "Dm",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, null, 0, 2, 3, 1],
+      "fingers": [null, null, 0, 2, 3, 1],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: Dm" }
+    },
+    {
+      "id": "voicing-f",
+      "chordSymbol": "F",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [1, 3, 3, 2, 1, 1],
+      "fingers": [1, 3, 4, 2, 1, 1],
+      "baseFret": 1,
+      "barres": [{ "fromString": 1, "toString": 6, "fret": 1, "finger": 1 }],
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: F" }
+    },
+    {
+      "id": "voicing-c",
+      "chordSymbol": "C",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 3, 2, 0, 1, 0],
+      "fingers": [null, 3, 2, 0, 1, 0],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: C" }
+    },
+    {
+      "id": "voicing-g-b",
+      "chordSymbol": "G/B",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 2, 0, 0, 0, 3],
+      "fingers": [null, 1, 0, 0, 0, 2],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: G/B" }
+    },
+    {
+      "id": "voicing-g",
+      "chordSymbol": "G",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [3, 2, 0, 0, 0, 3],
+      "fingers": [2, 1, 0, 0, 0, 3],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided The Cure source PDF, page 1 CHORDS diagram: G" }
+    }
+  ],
+  "rhythm": {
+    "tempoBpm": 144
+  }
+}
