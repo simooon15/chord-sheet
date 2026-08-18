@@ -7,19 +7,32 @@ import { ChordDiagram } from "./ChordDiagram";
 
 interface Props {
   document: ChordSheetDocument;
-  onChordClick: () => void;
+  onChordClick: (chord: LyricChord | ChordOnlyEvent, trigger: HTMLButtonElement) => void;
 }
 
 function displaySymbol(symbol: string, semitones: number) {
   return transposeChordSymbol(symbol, semitones).symbol;
 }
 
-function ChordButton({ chord, document, onClick }: { chord: LyricChord | ChordOnlyEvent; document: ChordSheetDocument; onClick: () => void }) {
+function ChordButton({ chord, document, onClick }: { chord: LyricChord | ChordOnlyEvent; document: ChordSheetDocument; onClick: Props["onChordClick"] }) {
   const symbol = displaySymbol(chord.symbol, document.view.transposeSemitones);
   const lowConfidence = chord.review?.confidence === "low";
+  const diagramMode = document.view.chordDisplay === "nameAndDiagram";
+  const action = diagramMode ? "换指法" : "展开全谱指法";
   return (
-    <button className={`score-chord ${lowConfidence ? "needs-review" : ""}`} onClick={onClick} title={lowConfidence ? "此位置需要复核；点击可切换全谱指法显示" : "点击可切换全谱指法显示"}>
-      {document.view.chordDisplay === "name" ? <span key={symbol}>{symbol}</span> : <ChordDiagram symbol={symbol} voicing={resolveVoicing(document, chord.symbol, chord.voicingId)} compact />}
+    <button
+      type="button"
+      className={`score-chord ${lowConfidence ? "needs-review" : ""}`}
+      onClick={(event) => onClick(chord, event.currentTarget)}
+      onContextMenu={(event) => {
+        if (!diagramMode) return;
+        event.preventDefault();
+        onClick(chord, event.currentTarget);
+      }}
+      aria-label={`${symbol}，${action}`}
+      title={lowConfidence ? `此位置需要复核；${action}` : action}
+    >
+      {!diagramMode ? <span key={symbol}>{symbol}</span> : <ChordDiagram symbol={symbol} voicing={resolveVoicing(document, chord.symbol, chord.voicingId)} compact />}
       {lowConfidence && <i aria-label="需要复核">•</i>}
     </button>
   );
@@ -27,7 +40,7 @@ function ChordButton({ chord, document, onClick }: { chord: LyricChord | ChordOn
 
 const DIAGRAM_ANCHOR_MIN_DISTANCE = 64;
 
-function LyricScoreLine({ line, document, onChordClick }: { line: Extract<ChordSheetDocument["sections"][number]["lines"][number], { type: "lyrics" }>; document: ChordSheetDocument; onChordClick: () => void }) {
+function LyricScoreLine({ line, document, onChordClick }: { line: Extract<ChordSheetDocument["sections"][number]["lines"][number], { type: "lyrics" }>; document: ChordSheetDocument; onChordClick: Props["onChordClick"] }) {
   const graphemes = splitGraphemes(line.text);
   const chordsByOffset = new Map(line.chords.map((chord) => [chord.anchor.graphemeOffset, chord]));
   const anchors = [...new Set([0, ...line.chords.map((chord) => chord.anchor.graphemeOffset), graphemeCount(line.text)])].sort((a, b) => a - b);

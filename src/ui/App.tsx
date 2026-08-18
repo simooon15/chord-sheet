@@ -2,7 +2,8 @@ import { type ChangeEvent, type CSSProperties, type DragEvent, useEffect, useMem
 import { parseKey, soundingKey, transposeChordSymbol, transposeKey } from "../domain/chords.mjs";
 import { validateChordSheet } from "../domain/validation.mjs";
 import { createDemoDocument } from "../data/demo";
-import { resolveVoicing } from "../domain/voicings";
+import { resetVoicingForChord, resolveVoicing, resolveVoicings, selectVoicingForChord } from "../domain/voicings";
+import { createYopuClipboardExport } from "../domain/yopuClipboard";
 import type { ChordOnlyEvent, ChordSheetDocument, LyricChord } from "../domain/types";
 import { createChordSheetArchive, importChordSheet } from "../package/archive.mjs";
 import { PackageError } from "../package/errors.mjs";
@@ -10,8 +11,16 @@ import { listSongs, loadSong, removeSong, saveSong } from "../storage/library";
 import { ChordDiagram } from "./ChordDiagram";
 import { Editor } from "./Editor";
 import { Score } from "./Score";
+import { VoicingPicker } from "./VoicingPicker";
 
 type StoredSummary = Awaited<ReturnType<typeof listSongs>>[number];
+type ChordEvent = LyricChord | ChordOnlyEvent;
+
+interface VoicingPickerState {
+  baseSymbol: string;
+  voicingId?: string;
+  anchorElement: HTMLElement;
+}
 
 function allChords(document: ChordSheetDocument) {
   const seen = new Set<string>();
@@ -35,6 +44,12 @@ function download(filename: string, bytes: Uint8Array, type: string) {
   URL.revokeObjectURL(url);
 }
 
+function hasVoicingReference(document: ChordSheetDocument, symbol: string) {
+  return document.sections.some((section) => section.lines.some((line) => (
+    line.type !== "annotation" && line.chords.some((chord) => chord.symbol === symbol && Boolean(chord.voicingId))
+  )));
+}
+
 export function App() {
   const [songs, setSongs] = useState<StoredSummary[]>([]);
   const [document, setDocument] = useState<ChordSheetDocument>();
@@ -43,6 +58,8 @@ export function App() {
   const [saveState, setSaveState] = useState("");
   const [isDraggingPackage, setIsDraggingPackage] = useState(false);
   const [isImportingPackage, setIsImportingPackage] = useState(false);
+  const [voicingPicker, setVoicingPicker] = useState<VoicingPickerState>();
+  const [copyFallback, setCopyFallback] = useState("");
   const sourcesRef = useRef(new Map<string, Uint8Array>());
   const fileInput = useRef<HTMLInputElement>(null);
 
@@ -74,6 +91,8 @@ export function App() {
     sourcesRef.current = sources;
     setDocument(next);
     setMode("read");
+    setVoicingPicker(undefined);
+    setCopyFallback("");
   };
 
   const importPackage = async (file: File) => {
@@ -117,6 +136,19 @@ export function App() {
 
   const changeView = (change: Partial<ChordSheetDocument["view"]>) => setDocument((current) => current ? { ...current, view: { ...current.view, ...change } } : current);
 
+  const openVoicingPicker = (chord: ChordEvent, anchorElement: HTMLElement) => {
+    setVoicingPicker({ baseSymbol: chord.symbol, voicingId: chord.voicingId, anchorElement });
+  };
+
+  const handleScoreChord = (chord: ChordEvent, anchorElement: HTMLButtonElement) => {
+    if (!document) return;
+    if (document.view.chordDisplay === "name") {
+      changeView({ chordDisplay: "nameAndDiagram" });
+      return;
+    }
+    openVoicingPicker(chord, anchorElement);
+  };
+
   const exportPackage = () => {
     if (!document) return;
     try {
@@ -127,12 +159,28 @@ export function App() {
     }
   };
 
+  const copyToYopu = async () => {
+    if (!document) return;
+    const exported = createYopuClipboardExport(document);
+    const warningText = exported.warnings.map((warning) => `• ${warning.message}`).join("\n");
+    if (warningText && !window.confirm(`复制内容不会包含以下项目：\n\n${warningText}\n\n继续复制吗？`)) return;
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error("clipboard unavailable");
+      await navigator.clipboard.writeText(exported.payload);
+      setCopyFallback("");
+      setNotice("已复制有谱么兼容内容，请前往有谱么编辑器粘贴并核对。");
+    } catch {
+      setCopyFallback(exported.payload);
+      setNotice("浏览器未允许写入剪贴板，请复制下方完整内容。");
+    }
+  };
+
   if (!document) {
     return <main className="app-shell welcome-shell">
       <header className="brand"><span>ChordSheet</span><small>LOCAL EDITION</small></header>
       <section className="welcome-card">
         <h1>先整理，再专心演奏。</h1>
-        <p className="welcome-lede">用 <a className="skill-inline" href={`${import.meta.env.BASE_URL}downloads/chordsheet-builder-skill-v0.1.1.zip`} download aria-label="下载 ChordSheet Builder 制谱 Skill（ZIP）">制谱 Skill</a> 把文字、截图或 PDF 生成 <code>.chordsheet</code> 谱包。</p>
+        <p className="welcome-lede">用 <a className="skill-inline" href={`${import.meta.env.BASE_URL}downloads/chordsheet-builder-skill-v0.2.0.zip`} download aria-label="下载 ChordSheet Builder 制谱 Skill（ZIP）">制谱 Skill</a> 把文字、截图或 PDF 生成 <code>.chordsheet</code> 谱包。</p>
         <button
           className={`package-drop-zone ${isDraggingPackage ? "is-dragging" : ""}`}
           type="button"
@@ -163,6 +211,7 @@ export function App() {
       <div className="topbar-actions">
         <button className="quiet-button" onClick={() => fileInput.current?.click()}>导入</button>
         <button className="quiet-button" onClick={exportPackage}>导出谱包</button>
+        <button className="quiet-button" onClick={() => void copyToYopu()}>复制到有谱么</button>
         <button className="quiet-button" onClick={() => window.print()}>打印 / PDF</button>
         <button className={`mode-button ${mode === "edit" ? "is-active" : ""}`} onClick={() => setMode(mode === "read" ? "edit" : "read")}>{mode === "read" ? "编辑" : "阅读"}</button>
       </div>
@@ -203,13 +252,48 @@ export function App() {
           <div><p className="eyebrow">CHORDS IN THIS SONG</p><button className="quiet-button no-print" onClick={() => changeView({ chordDisplay: document.view.chordDisplay === "name" ? "nameAndDiagram" : "name" })}>{document.view.chordDisplay === "name" ? "展开指法" : "收起指法"}</button></div>
           <div className="overview-chords">{chordSummary.map((chord) => {
             const name = transposeChordSymbol(chord.symbol, document.view.transposeSemitones).symbol;
-            return <button key={chord.symbol} className="overview-chord" onClick={() => changeView({ chordDisplay: document.view.chordDisplay === "name" ? "nameAndDiagram" : "name" })}>{document.view.chordDisplay === "name" ? <ChordDiagram symbol={name} voicing={resolveVoicing(document, chord.symbol, chord.voicingId)} /> : <span key={name}>{name}</span>}</button>;
+            const diagramVisible = document.view.chordDisplay === "name";
+            return <button
+              type="button"
+              key={chord.symbol}
+              className="overview-chord"
+              aria-label={`${name}，${diagramVisible ? "换指法" : "收起全谱指法"}`}
+              title={diagramVisible ? "换指法" : "收起全谱指法"}
+              onClick={(event) => diagramVisible ? openVoicingPicker(chord, event.currentTarget) : changeView({ chordDisplay: "name" })}
+              onContextMenu={(event) => {
+                if (!diagramVisible) return;
+                event.preventDefault();
+                openVoicingPicker(chord, event.currentTarget);
+              }}
+            >{diagramVisible ? <ChordDiagram symbol={name} voicing={resolveVoicing(document, chord.symbol, chord.voicingId)} /> : <span key={name}>{name}</span>}</button>;
           })}</div>
         </section>
-        <Score document={document} onChordClick={() => changeView({ chordDisplay: document.view.chordDisplay === "name" ? "nameAndDiagram" : "name" })} />
+        <Score document={document} onChordClick={handleScoreChord} />
       </article>
       {mode === "edit" && <Editor document={document} onChange={setDocument} />}
+      {copyFallback && <section className="copy-fallback no-print" aria-label="有谱么复制内容">
+        <p>复制下面的完整内容，再粘贴到有谱么编辑器：</p>
+        <textarea readOnly value={copyFallback} onFocus={(event) => event.currentTarget.select()} />
+      </section>}
       <p className="document-notice no-print" role="status">{notice}</p>
     </section>
+    {voicingPicker && <VoicingPicker
+      symbol={transposeChordSymbol(voicingPicker.baseSymbol, document.view.transposeSemitones).symbol}
+      candidates={resolveVoicings(document, voicingPicker.baseSymbol, voicingPicker.voicingId)}
+      selectedId={resolveVoicing(document, voicingPicker.baseSymbol, voicingPicker.voicingId)?.id}
+      canReset={hasVoicingReference(document, voicingPicker.baseSymbol)}
+      anchorElement={voicingPicker.anchorElement}
+      onSelect={(candidate) => {
+        setDocument((current) => current ? selectVoicingForChord(current, voicingPicker.baseSymbol, candidate) : current);
+        setNotice(`已将 ${voicingPicker.baseSymbol} 的指法应用到本曲全部同名和弦。`);
+        setVoicingPicker(undefined);
+      }}
+      onReset={() => {
+        setDocument((current) => current ? resetVoicingForChord(current, voicingPicker.baseSymbol) : current);
+        setNotice(`已恢复 ${voicingPicker.baseSymbol} 的默认指法。`);
+        setVoicingPicker(undefined);
+      }}
+      onClose={() => setVoicingPicker(undefined)}
+    />}
   </main>;
 }

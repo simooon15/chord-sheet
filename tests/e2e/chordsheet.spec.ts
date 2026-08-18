@@ -34,6 +34,34 @@ test("desktop reader supports global chord display, transpose and desktop editin
   await expect(page.getByRole("slider", { name: /锚点/ }).first()).toBeVisible();
 });
 
+test("desktop changes The Cure C voicing, saves it in the song and copies a Yopu payload", async ({ page, isMobile }) => {
+  test.skip(isMobile, "The persistence and clipboard path is covered once on desktop.");
+  await page.context().grantPermissions(["clipboard-read", "clipboard-write"]);
+  page.on("dialog", (dialog) => void dialog.accept());
+  await page.goto("/");
+  await page.locator("input[type=file]").setInputFiles(theCurePackage);
+
+  await page.getByRole("button", { name: "C，换指法" }).first().click();
+  const picker = page.getByRole("dialog", { name: "选择 C 的指法" });
+  await expect(picker).toBeVisible();
+  await expect(picker.getByRole("radio")).toHaveCount(3);
+  await picker.getByRole("radio").nth(1).click();
+  await expect(picker).toHaveCount(0);
+  await expect(page.getByText("已将 C 的指法应用到本曲全部同名和弦。")).toBeVisible();
+  await expect(page.getByText("已保存到此浏览器")).toBeVisible();
+
+  await page.getByRole("button", { name: "曲库" }).click();
+  await page.getByRole("button", { name: "The Cure · Olivia Rodrigo" }).click();
+  await page.getByRole("button", { name: "C，换指法" }).first().click();
+  await expect(page.getByRole("radio").first()).toHaveAttribute("aria-checked", "true");
+  await page.getByRole("button", { name: "关闭指法选择器" }).click();
+
+  await page.getByRole("button", { name: "复制到有谱么" }).click();
+  const payload = await page.evaluate(() => navigator.clipboard.readText());
+  expect(payload.split("_XHE_COPY_PASTE_SENTINEL_")).toHaveLength(2);
+  expect(() => JSON.parse(payload.split("_XHE_COPY_PASTE_SENTINEL_")[1])).not.toThrow();
+});
+
 test("mobile retains every reading control and directs detailed edits to desktop", async ({ page, isMobile }) => {
   test.skip(!isMobile, "Only applicable to the mobile project.");
   await page.goto("/");
@@ -44,6 +72,21 @@ test("mobile retains every reading control and directs detailed edits to desktop
   await expect(page.getByRole("slider", { name: "谱面字号" })).toBeVisible();
   await expect(page.getByText("需要校正歌词或和弦落点？请在桌面端打开此谱。")).toBeVisible();
   await expect(page.locator(".editor-panel")).toBeHidden();
+});
+
+test("mobile uses the same C voicing picker without horizontal overflow", async ({ page, isMobile }) => {
+  test.skip(!isMobile, "Only applicable to the mobile project.");
+  await page.goto("/");
+  await page.locator("input[type=file]").setInputFiles(theCurePackage);
+  await page.getByRole("button", { name: "C，换指法" }).first().tap();
+  const picker = page.getByRole("dialog", { name: "选择 C 的指法" });
+  await expect(picker).toBeVisible();
+  await expect(picker.getByRole("radio")).toHaveCount(3);
+  const columnCount = await page.locator(".voicing-candidates").evaluate((element) => getComputedStyle(element).gridTemplateColumns.split(" ").length);
+  expect(columnCount).toBe(1);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await picker.getByRole("radio").nth(1).tap();
+  await expect(picker).toHaveCount(0);
 });
 
 test("imports the character-anchored The Cure package with Db sounding key and complementary chord overview", async ({ page, isMobile }) => {

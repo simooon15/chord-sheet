@@ -1,0 +1,488 @@
+{
+  "format": "chordsheet",
+  "formatVersion": "1.0.0",
+  "documentId": "notion-the-rare-occasions",
+  "createdAt": "2026-07-23T00:00:00+08:00",
+  "updatedAt": "2026-07-23T00:00:00+08:00",
+  "generator": {
+    "name": "ChordSheet Builder",
+    "version": "1.0.0"
+  },
+  "metadata": {
+    "title": "Notion",
+    "artist": "The Rare Occasions",
+    "language": "en",
+    "difficulty": "intermediate",
+    "baseWrittenKey": "A",
+    "instrument": {
+      "type": "guitar",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"]
+    }
+  },
+  "view": {
+    "transposeSemitones": 0,
+    "capo": 0,
+    "fontScale": 1,
+    "chordDisplay": "nameAndDiagram"
+  },
+  "sources": [
+    {
+      "id": "source-notion-pdf",
+      "kind": "pdf",
+      "role": "both",
+      "originalName": "Notion Chords by The Rare Occasionstabs @ Ultimate Guitar Archive.pdf",
+      "mimeType": "application/pdf",
+      "pageCount": 2,
+      "embedded": false
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-intro",
+      "type": "intro",
+      "label": "Intro",
+      "lines": [
+        {
+          "id": "line-intro-chords",
+          "type": "chords",
+          "chords": [
+            { "id": "chord-intro-a", "symbol": "A", "voicingId": "voicing-a" },
+            { "id": "chord-intro-faug", "symbol": "Faug", "voicingId": "voicing-faug" },
+            { "id": "chord-intro-dmaj7", "symbol": "Dmaj7", "voicingId": "voicing-dmaj7" },
+            { "id": "chord-intro-dm6", "symbol": "Dm6", "voicingId": "voicing-dm6" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-verse-1",
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "id": "line-v1-1",
+          "type": "lyrics",
+          "text": "Sure it’s a calming notion, perpetual in motion",
+          "chords": [
+            { "id": "chord-v1-1-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 12 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v1-1-fsm", "symbol": "F#m", "anchor": { "graphemeOffset": 35 }, "voicingId": "voicing-fsm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-v1-2",
+          "type": "lyrics",
+          "text": "But I don’t need the comfort of any lies",
+          "chords": [
+            { "id": "chord-v1-2-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 12 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v1-2-fsm", "symbol": "F#m", "anchor": { "graphemeOffset": 36 }, "voicingId": "voicing-fsm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-v1-3",
+          "type": "lyrics",
+          "text": "For I have seen the ending and there is no ascending rise",
+          "chords": [
+            { "id": "chord-v1-3-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 11 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v1-3-fsm", "symbol": "F#m", "anchor": { "graphemeOffset": 40 }, "voicingId": "voicing-fsm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v1-3-a", "symbol": "A", "anchor": { "graphemeOffset": 53 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v1-3-faug", "symbol": "Faug", "anchor": { "graphemeOffset": 55 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-verse-2",
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "id": "line-v2-1",
+          "type": "lyrics",
+          "text": "Oh, back when I was younger, was told by other youngsters",
+          "chords": [
+            { "id": "chord-v2-1-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 14 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v2-1-fsm", "symbol": "F#m", "anchor": { "graphemeOffset": 41 }, "voicingId": "voicing-fsm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-v2-2",
+          "type": "lyrics",
+          "text": "That my end will be torture beneath the earth",
+          "chords": [
+            { "id": "chord-v2-2-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 12 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v2-2-fsm", "symbol": "F#m", "anchor": { "graphemeOffset": 40 }, "voicingId": "voicing-fsm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-v2-3",
+          "type": "lyrics",
+          "text": "‘Cause I don’t see what they see when death is staring at me",
+          "chords": [
+            { "id": "chord-v2-3-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 15 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v2-3-fsm", "symbol": "F#m", "anchor": { "graphemeOffset": 47 }, "voicingId": "voicing-fsm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-v2-4",
+          "type": "lyrics",
+          "text": "I see a window, a limit, to live it, or not at all ",
+          "chords": [
+            { "id": "chord-v2-4-bm6", "symbol": "Bm6", "anchor": { "graphemeOffset": 8 }, "voicingId": "voicing-bm6", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v2-4-bm7", "symbol": "Bm7", "anchor": { "graphemeOffset": 18 }, "voicingId": "voicing-bm7", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v2-4-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 28 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v2-4-bmadd9", "symbol": "Bmadd9", "anchor": { "graphemeOffset": 40 }, "voicingId": "voicing-bmadd9", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v2-4-faug", "symbol": "Faug", "anchor": { "graphemeOffset": 51 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-v2-note",
+          "type": "annotation",
+          "text": "Ascending line on last line of 2nd verse implied by lead guitar part, but you can just stay on Bm."
+        }
+      ]
+    },
+    {
+      "id": "section-interlude",
+      "type": "interlude",
+      "label": "Interlude",
+      "lines": [
+        { "id": "line-interlude-key", "type": "annotation", "text": "(A)" },
+        { "id": "line-interlude-tab-1", "type": "annotation", "text": "e|------------16-14--------|" },
+        { "id": "line-interlude-tab-2", "type": "annotation", "text": "B|---14----14-------18--b--|  (bend slowly up to" },
+        { "id": "line-interlude-tab-3", "type": "annotation", "text": "G|------14-----------------|  F# over Dmaj7 chord)" },
+        { "id": "line-interlude-tab-4", "type": "annotation", "text": "D|-------------------------|" },
+        { "id": "line-interlude-tab-5", "type": "annotation", "text": "A|-------------------------|" },
+        { "id": "line-interlude-tab-6", "type": "annotation", "text": "E|-------------------------|" },
+        {
+          "id": "line-interlude-chords",
+          "type": "chords",
+          "chords": [
+            { "id": "chord-interlude-dmaj7-1", "symbol": "Dmaj7", "voicingId": "voicing-dmaj7" },
+            { "id": "chord-interlude-fmaj7-1", "symbol": "Fmaj7", "voicingId": "voicing-fmaj7" },
+            { "id": "chord-interlude-amaj7", "symbol": "Amaj7", "voicingId": "voicing-amaj7" },
+            { "id": "chord-interlude-fsm7", "symbol": "F#m7" },
+            { "id": "chord-interlude-bm7", "symbol": "Bm7", "voicingId": "voicing-bm7" },
+            { "id": "chord-interlude-csm7", "symbol": "C#m7" },
+            { "id": "chord-interlude-dmaj7-2", "symbol": "Dmaj7", "voicingId": "voicing-dmaj7" },
+            { "id": "chord-interlude-fmaj7-2", "symbol": "Fmaj7", "voicingId": "voicing-fmaj7" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-verse-3",
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "id": "line-v3-1",
+          "type": "lyrics",
+          "text": "If you could pull the lever to carry on forever",
+          "chords": [
+            { "id": "chord-v3-1-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 13 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v3-1-fsm", "symbol": "F#m", "anchor": { "graphemeOffset": 37 }, "voicingId": "voicing-fsm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-v3-2",
+          "type": "lyrics",
+          "text": "Would your life even matter anymore?",
+          "chords": [
+            { "id": "chord-v3-2-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 16 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v3-2-fsm", "symbol": "F#m", "anchor": { "graphemeOffset": 31 }, "voicingId": "voicing-fsm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-v3-3",
+          "type": "lyrics",
+          "text": "Sure it’s a calming notion, perpetual in motion",
+          "chords": [
+            { "id": "chord-v3-3-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 12 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v3-3-fsm", "symbol": "F#m", "anchor": { "graphemeOffset": 35 }, "voicingId": "voicing-fsm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-v3-4",
+          "type": "lyrics",
+          "text": "But it’s not what you signed up for",
+          "chords": [
+            { "id": "chord-v3-4-a", "symbol": "A", "anchor": { "graphemeOffset": 9 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-v3-4-faug", "symbol": "Faug", "anchor": { "graphemeOffset": 29 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-bridge",
+      "type": "bridge",
+      "label": "Bridge",
+      "lines": [
+        {
+          "id": "line-bridge-progression",
+          "type": "chords",
+          "chords": [
+            { "id": "chord-bridge-prog-a", "symbol": "A", "voicingId": "voicing-a" },
+            { "id": "chord-bridge-prog-faug-1", "symbol": "Faug", "voicingId": "voicing-faug" },
+            { "id": "chord-bridge-prog-dmaj7", "symbol": "Dmaj7", "voicingId": "voicing-dmaj7" },
+            { "id": "chord-bridge-prog-faug-2", "symbol": "Faug", "voicingId": "voicing-faug" }
+          ]
+        },
+        { "id": "line-bridge-progression-repeat", "type": "annotation", "text": "(x2)" },
+        {
+          "id": "line-bridge-1",
+          "type": "lyrics",
+          "text": "  I’m sure there won’t always be sun - shine",
+          "chords": [
+            { "id": "chord-bridge-1-a", "symbol": "A", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-1-faug-1", "symbol": "Faug", "anchor": { "graphemeOffset": 17 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-1-dmaj7", "symbol": "Dmaj7", "anchor": { "graphemeOffset": 33 }, "voicingId": "voicing-dmaj7", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-1-faug-2", "symbol": "Faug", "anchor": { "graphemeOffset": 39 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-bridge-2",
+          "type": "lyrics",
+          "text": "  But there’s this momentary beam of light",
+          "chords": [
+            { "id": "chord-bridge-2-a", "symbol": "A", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-2-faug-1", "symbol": "Faug", "anchor": { "graphemeOffset": 19 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-2-dmaj7", "symbol": "Dmaj7", "anchor": { "graphemeOffset": 29 }, "voicingId": "voicing-dmaj7", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-2-faug-2", "symbol": "Faug", "anchor": { "graphemeOffset": 37 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-bridge-3",
+          "type": "lyrics",
+          "text": "You don’t have to wait those salty decades",
+          "chords": [
+            { "id": "chord-bridge-3-a", "symbol": "A", "anchor": { "graphemeOffset": 4 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-3-faug", "symbol": "Faug", "anchor": { "graphemeOffset": 29 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-bridge-4",
+          "type": "lyrics",
+          "text": "To get through the gate, it’s all in front of your face",
+          "chords": [
+            { "id": "chord-bridge-4-dmaj7", "symbol": "Dmaj7", "anchor": { "graphemeOffset": 3 }, "voicingId": "voicing-dmaj7", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-4-faug", "symbol": "Faug", "anchor": { "graphemeOffset": 37 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-bridge-5",
+          "type": "lyrics",
+          "text": "  I’m sure there won’t always be sun - shine",
+          "chords": [
+            { "id": "chord-bridge-5-a", "symbol": "A", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-5-faug-1", "symbol": "Faug", "anchor": { "graphemeOffset": 17 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-5-dmaj7", "symbol": "Dmaj7", "anchor": { "graphemeOffset": 33 }, "voicingId": "voicing-dmaj7", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-5-faug-2", "symbol": "Faug", "anchor": { "graphemeOffset": 39 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-bridge-6",
+          "type": "lyrics",
+          "text": "  I’m sure there won’t always be sun - shine",
+          "chords": [
+            { "id": "chord-bridge-6-a", "symbol": "A", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-6-faug", "symbol": "Faug", "anchor": { "graphemeOffset": 17 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-6-dmaj7", "symbol": "Dmaj7", "anchor": { "graphemeOffset": 33 }, "voicingId": "voicing-dmaj7", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-6-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 39 }, "voicingId": "voicing-dm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-bridge-7",
+          "type": "lyrics",
+          "text": "  But there’s this momentary beam of light",
+          "chords": [
+            { "id": "chord-bridge-7-a", "symbol": "A", "anchor": { "graphemeOffset": 0 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-7-faug", "symbol": "Faug", "anchor": { "graphemeOffset": 19 }, "voicingId": "voicing-faug", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-7-dmaj7", "symbol": "Dmaj7", "anchor": { "graphemeOffset": 29 }, "voicingId": "voicing-dmaj7", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-bridge-7-dm", "symbol": "Dm", "anchor": { "graphemeOffset": 37 }, "voicingId": "voicing-dm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-chorus-3",
+      "type": "chorus",
+      "label": "Chorus 3",
+      "lines": [
+        {
+          "id": "line-c3-1",
+          "type": "lyrics",
+          "text": "I could could cross the ocean in a fit of devotion",
+          "chords": [
+            { "id": "chord-c3-1-a", "symbol": "A", "anchor": { "graphemeOffset": 14 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-c3-1-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 39 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-c3-2",
+          "type": "lyrics",
+          "text": "For every shining second this fragile body beckons",
+          "chords": [
+            { "id": "chord-c3-2-a", "symbol": "A", "anchor": { "graphemeOffset": 10 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-c3-2-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 38 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-c3-3",
+          "type": "lyrics",
+          "text": "You think you’re owed it better believing ancient letters",
+          "chords": [
+            { "id": "chord-c3-3-a", "symbol": "A", "anchor": { "graphemeOffset": 17 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-c3-3-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 42 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        },
+        {
+          "id": "line-c3-4",
+          "type": "lyrics",
+          "text": "Sure it’s a calming notion but it’s a lie",
+          "chords": [
+            { "id": "chord-c3-4-a", "symbol": "A", "anchor": { "graphemeOffset": 12 }, "voicingId": "voicing-a", "review": { "confidence": "high", "status": "confirmed" } },
+            { "id": "chord-c3-4-bm", "symbol": "Bm", "anchor": { "graphemeOffset": 38 }, "voicingId": "voicing-bm", "review": { "confidence": "high", "status": "confirmed" } }
+          ]
+        }
+      ]
+    }
+  ],
+  "voicings": [
+    {
+      "id": "voicing-a",
+      "chordSymbol": "A",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 0, 2, 2, 2, 0],
+      "fingers": [null, 0, 1, 2, 3, 0],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: A" }
+    },
+    {
+      "id": "voicing-faug",
+      "chordSymbol": "Faug",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, null, 3, 2, 2, 1],
+      "fingers": [null, null, 4, 2, 3, 1],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: Faug" }
+    },
+    {
+      "id": "voicing-dmaj7",
+      "chordSymbol": "Dmaj7",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, null, 0, 2, 2, 2],
+      "fingers": [null, null, 0, 1, 1, 1],
+      "baseFret": 1,
+      "barres": [{ "fromString": 4, "toString": 6, "fret": 2, "finger": 1 }],
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: Dmaj7" }
+    },
+    {
+      "id": "voicing-dm6",
+      "chordSymbol": "Dm6",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, null, 0, 2, 0, 1],
+      "fingers": [null, null, 0, 2, 0, 1],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: Dm6" }
+    },
+    {
+      "id": "voicing-bm",
+      "chordSymbol": "Bm",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 2, 4, 4, 3, 2],
+      "fingers": [null, 1, 3, 4, 2, 1],
+      "baseFret": 2,
+      "barres": [{ "fromString": 2, "toString": 6, "fret": 2, "finger": 1 }],
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: Bm" }
+    },
+    {
+      "id": "voicing-fsm",
+      "chordSymbol": "F#m",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [2, 4, 4, 2, 2, 2],
+      "fingers": [1, 3, 4, 1, 1, 1],
+      "baseFret": 2,
+      "barres": [{ "fromString": 1, "toString": 6, "fret": 2, "finger": 1 }],
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: F#m" }
+    },
+    {
+      "id": "voicing-bm6",
+      "chordSymbol": "Bm6",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 2, 0, 1, 0, 2],
+      "fingers": [null, 2, 0, 1, 0, 3],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: Bm6" }
+    },
+    {
+      "id": "voicing-bm7",
+      "chordSymbol": "Bm7",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 2, 0, 2, 0, 2],
+      "fingers": [null, 1, 0, 2, 0, 3],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: Bm7" }
+    },
+    {
+      "id": "voicing-bmadd9",
+      "chordSymbol": "Bmadd9",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [7, 9, 9, 7, 7, 9],
+      "fingers": [1, 2, 3, 1, 1, 4],
+      "baseFret": 7,
+      "barres": [{ "fromString": 1, "toString": 5, "fret": 7, "finger": 1 }],
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: Bmadd9" }
+    },
+    {
+      "id": "voicing-fmaj7",
+      "chordSymbol": "Fmaj7",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, null, 3, 2, 1, 0],
+      "fingers": [null, null, 3, 2, 1, 0],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: Fmaj7" }
+    },
+    {
+      "id": "voicing-amaj7",
+      "chordSymbol": "Amaj7",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 0, 2, 1, 2, 0],
+      "fingers": [null, 0, 2, 1, 3, 0],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: Amaj7" }
+    },
+    {
+      "id": "voicing-dm",
+      "chordSymbol": "Dm",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, null, 0, 2, 3, 1],
+      "fingers": [null, null, 0, 2, 3, 1],
+      "baseFret": 1,
+      "verification": { "status": "verified", "method": "sourceDiagram", "reference": "User-provided Ultimate Guitar PDF, page 1 CHORDS diagram: Dm" }
+    }
+  ],
+  "rhythm": {
+    "tempoBpm": 160,
+    "patterns": [
+      {
+        "id": "pattern-main",
+        "label": "Main pattern (beats 1–8)",
+        "stepsPerMeasure": 16,
+        "events": [
+          { "slot": 0, "stroke": "down" },
+          { "slot": 2, "stroke": "down" },
+          { "slot": 3, "stroke": "up" },
+          { "slot": 5, "stroke": "up" },
+          { "slot": 6, "stroke": "down" },
+          { "slot": 7, "stroke": "up" },
+          { "slot": 9, "stroke": "up" },
+          { "slot": 10, "stroke": "down" },
+          { "slot": 11, "stroke": "up" },
+          { "slot": 13, "stroke": "up" },
+          { "slot": 14, "stroke": "down" },
+          { "slot": 15, "stroke": "up" }
+        ]
+      }
+    ]
+  }
+}

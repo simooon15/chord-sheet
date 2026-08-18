@@ -8,19 +8,21 @@ When packaging in the ChordSheet project, use its validator before and after ZIP
 
 ## Alignment and review
 
-For a lyrics line, `graphemeOffset: 0` is immediately before its first grapheme, and the total grapheme count is the end boundary. Events must be stored in ascending anchor order; two events cannot share an anchor. A visual chord above a word goes before the grapheme where that word begins, not after its preceding whitespace unless the source clearly places it there.
+For a lyrics line, `graphemeOffset: 0` is immediately before its first grapheme, and the total grapheme count is the end boundary. Events must be stored in ascending anchor order; two events cannot share an anchor. Anchor a chord to the precise source column of its root letter, never to a word start by default. A word start is correct only when the root letter itself aligns with that word’s first grapheme; an in-word or whitespace alignment must retain its own boundary.
 
 ### Required character-level anchoring procedure
 
 For a PDF render or image, treat the left edge of the chord's root letter as an alignment marker. It must be mapped to one exact grapheme boundary in the lyric line; do not first reduce the position to a word, a whitespace run, or a visual column.
 
-1. Establish the canonical lyric text for the visual line. Use copied text for spelling when available; otherwise transcribe the visual lyric line. Split it into Unicode graphemes.
+1. Establish the canonical lyric text for the visual line. Use copied text for spelling when available; otherwise transcribe the visual lyric line. Preserve leading or trailing whitespace when it occupies a source column needed by a chord anchor; do not trim it. Split the resulting text into Unicode graphemes.
 2. Read the visual lyric line character by character and map each visible glyph to its canonical grapheme index. This preserves a chord change inside a word, including Chinese characters, combining marks, and emoji.
 3. For each chord above that lyric line, locate the glyph whose left edge is aligned with the chord root letter's left edge. Persist the boundary immediately before that glyph as `anchor.graphemeOffset`.
 4. If the root letter falls visually between two lyric glyphs, choose the boundary visually closest to its left edge and record `review.confidence: "medium"` with `unclearSource`. If it lands in whitespace, use the boundary at that exact whitespace position rather than snapping to the next word.
 5. Check every anchor against the original visual line after converting it. A chord may be `high` / `confirmed` only when its root-letter-to-glyph pairing was directly checked. Do not promote an inferred word-level placement to high confidence.
 
 Example: if an `Am` chord's `A` is vertically aligned with the `a` in `Heart`, the anchor is the boundary before that `a` (`Heart` → offset `2`), not the start of `Heart` (`0`) and not the preceding space. The stored value is the grapheme offset; the image coordinate remains optional evidence only.
+
+Regression example: in `For I have seen the ending and there is no ascending rise`, if the `A` root aligns with `rise`’s `r` and `Faug`’s `F` aligns with its `s`, use offsets `53` and `55` respectively. Anchoring them at `ascending` (`43`) and `rise`’s `r` (`53`) fails this rule.
 
 When several lyric words or chords are close together, make the mapping one chord at a time. Preserve the source's intended character-level relationship even when the generated score uses a different font, size, screen width, or line wrap.
 

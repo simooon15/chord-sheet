@@ -1,0 +1,118 @@
+{
+  "format": "chordsheet",
+  "formatVersion": "1.0.0",
+  "documentId": "yopu-synthetic",
+  "metadata": {
+    "title": "兼容导出测试",
+    "artist": "ChordSheet",
+    "baseWrittenKey": "C",
+    "instrument": {
+      "type": "guitar",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"]
+    }
+  },
+  "view": {
+    "transposeSemitones": 1,
+    "capo": 1,
+    "fontScale": 1,
+    "chordDisplay": "name"
+  },
+  "sources": [
+    {
+      "id": "source-test",
+      "kind": "copiedText",
+      "role": "both",
+      "embedded": false
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-verse",
+      "type": "verse",
+      "label": "主歌",
+      "repeat": 2,
+      "lines": [
+        {
+          "id": "line-lyrics",
+          "type": "lyrics",
+          "text": "A😊 rise ",
+          "chords": [
+            {
+              "id": "chord-visible",
+              "symbol": "C",
+              "anchor": { "graphemeOffset": 0 },
+              "voicingId": "selected-test"
+            },
+            {
+              "id": "chord-space",
+              "symbol": "G",
+              "anchor": { "graphemeOffset": 2 }
+            },
+            {
+              "id": "chord-end",
+              "symbol": "D",
+              "anchor": { "graphemeOffset": 8 }
+            }
+          ]
+        },
+        {
+          "id": "line-annotation",
+          "type": "annotation",
+          "text": "轻声"
+        },
+        {
+          "id": "line-chords",
+          "type": "chords",
+          "chords": [
+            {
+              "id": "chord-only-em",
+              "symbol": "Em",
+              "durationBeats": 2
+            },
+            {
+              "id": "chord-only-c",
+              "symbol": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-chorus",
+      "type": "chorus",
+      "label": "副歌",
+      "lines": [
+        {
+          "id": "line-final",
+          "type": "lyrics",
+          "text": "done",
+          "chords": [
+            {
+              "id": "chord-final",
+              "symbol": "F",
+              "anchor": { "graphemeOffset": 1 }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "voicings": [
+    {
+      "id": "selected-test",
+      "chordSymbol": "C",
+      "tuning": ["E2", "A2", "D3", "G3", "B3", "E4"],
+      "frets": [null, 3, 2, 0, 1, 0],
+      "baseFret": 1,
+      "verification": {
+        "status": "verified",
+        "method": "licensedDataset",
+        "reference": "Synthetic fixture",
+        "license": "MIT"
+      }
+    }
+  ],
+  "rhythm": {
+    "tempoBpm": 96
+  }
+}

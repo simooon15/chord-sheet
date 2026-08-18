@@ -1,7 +1,7 @@
 {
   "name": "chordsheet",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,8 @@
     "test:e2e": "playwright test",
     "validate:example": "node scripts/validate-chordsheet.mjs examples/anchor-check.chordsheet",
     "package:example": "node scripts/package-chordsheet.mjs examples/anchor-check/chordsheet.json --source sources/anchor-check.txt=examples/anchor-check/sources/anchor-check.txt --output examples/anchor-check.generated.chordsheet",
-    "sync:skill-schema": "node scripts/sync-skill-schema.mjs"
+    "sync:skill-schema": "node scripts/sync-skill-schema.mjs",
+    "audit:voicings": "node scripts/audit-guitar-voicings.mjs"
   },
   "dependencies": {
     "ajv": "^8.17.1",
