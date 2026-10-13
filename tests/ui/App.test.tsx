@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { describe, expect, it } from "vitest";
 import fixture from "../../output/the-cure-test-run/chordsheet.json";
 import { createChordSheetArchive } from "../../src/package/archive.mjs";
 import { App } from "../../src/ui/App";
@@ -92,35 +92,18 @@ describe("本地实时谱页面", () => {
     expect(trigger).toHaveFocus();
   });
 
-  it("复制有谱么载荷前列出降级项，并写入包含单一哨兵的完整内容", async () => {
+  it("生成可拖动的导入书签，展示步骤和降级项", async () => {
     const user = userEvent.setup();
-    const writeText = vi.fn().mockResolvedValue(undefined);
-    Object.defineProperty(navigator, "clipboard", { configurable: true, value: { writeText } });
-    const confirm = vi.spyOn(window, "confirm").mockReturnValue(true);
     render(<App />);
     await user.click(screen.getByRole("button", { name: "打开 The Cure 基准谱" }));
-    await user.click(screen.getByRole("button", { name: "复制到有谱么" }));
-
-    expect(confirm).toHaveBeenCalledWith(expect.stringContaining("歌曲资料不会随剪贴板传递"));
-    expect(writeText).toHaveBeenCalledOnce();
-    const payload = writeText.mock.calls[0][0] as string;
-    expect(payload.split("_XHE_COPY_PASTE_SENTINEL_")).toHaveLength(2);
-    expect(() => JSON.parse(payload.split("_XHE_COPY_PASTE_SENTINEL_")[1])).not.toThrow();
-    expect(screen.getByText(/已复制有谱么兼容内容/)).toBeInTheDocument();
-  });
-
-  it("剪贴板权限失败时显示可全选的完整载荷", async () => {
-    const user = userEvent.setup();
-    Object.defineProperty(navigator, "clipboard", {
-      configurable: true,
-      value: { writeText: vi.fn().mockRejectedValue(new Error("denied")) }
-    });
-    vi.spyOn(window, "confirm").mockReturnValue(true);
-    render(<App />);
-    await user.click(screen.getByRole("button", { name: "打开 The Cure 基准谱" }));
-    await user.click(screen.getByRole("button", { name: "复制到有谱么" }));
-    const fallback = await screen.findByRole("textbox");
-    expect((fallback as HTMLTextAreaElement).value).toContain("_XHE_COPY_PASTE_SENTINEL_");
-    expect(screen.getByText(/浏览器未允许写入剪贴板/)).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "导入到有谱么" }));
+    const bookmark = screen.getByRole("link", { name: "导入 The Cure 到有谱么" });
+    expect(bookmark.getAttribute("href")).toMatch(/^javascript:/);
+    expect(bookmark).toHaveAttribute("draggable", "true");
+    expect(screen.getByText(/歌曲资料不会随书签导入/)).toBeInTheDocument();
+    expect(screen.getByText(/谱面会直接插入/)).toBeInTheDocument();
+    await user.click(bookmark);
+    expect(screen.getByText(/请把导入按钮拖到书签栏，再到有谱么草稿页/)).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "复制到有谱么" })).not.toBeInTheDocument();
   });
 });

@@ -3,7 +3,7 @@ import { parseKey, soundingKey, transposeChordSymbol, transposeKey } from "../do
 import { validateChordSheet } from "../domain/validation.mjs";
 import { createDemoDocument } from "../data/demo";
 import { resetVoicingForChord, resolveVoicing, resolveVoicings, selectVoicingForChord } from "../domain/voicings";
-import { createYopuClipboardExport } from "../domain/yopuClipboard";
+import { createYopuImportBookmark } from "../domain/yopuImport";
 import type { ChordOnlyEvent, ChordSheetDocument, LyricChord } from "../domain/types";
 import { createChordSheetArchive, importChordSheet } from "../package/archive.mjs";
 import { PackageError } from "../package/errors.mjs";
@@ -59,7 +59,8 @@ export function App() {
   const [isDraggingPackage, setIsDraggingPackage] = useState(false);
   const [isImportingPackage, setIsImportingPackage] = useState(false);
   const [voicingPicker, setVoicingPicker] = useState<VoicingPickerState>();
-  const [copyFallback, setCopyFallback] = useState("");
+  const [showYopuImport, setShowYopuImport] = useState(false);
+  const yopuImport = useMemo(() => document && createYopuImportBookmark(document), [document]);
   const sourcesRef = useRef(new Map<string, Uint8Array>());
   const fileInput = useRef<HTMLInputElement>(null);
 
@@ -92,7 +93,7 @@ export function App() {
     setDocument(next);
     setMode("read");
     setVoicingPicker(undefined);
-    setCopyFallback("");
+    setShowYopuImport(false);
   };
 
   const importPackage = async (file: File) => {
@@ -159,21 +160,6 @@ export function App() {
     }
   };
 
-  const copyToYopu = async () => {
-    if (!document) return;
-    const exported = createYopuClipboardExport(document);
-    const warningText = exported.warnings.map((warning) => `• ${warning.message}`).join("\n");
-    if (warningText && !window.confirm(`复制内容不会包含以下项目：\n\n${warningText}\n\n继续复制吗？`)) return;
-    try {
-      if (!navigator.clipboard?.writeText) throw new Error("clipboard unavailable");
-      await navigator.clipboard.writeText(exported.payload);
-      setCopyFallback("");
-      setNotice("已复制有谱么兼容内容，请前往有谱么编辑器粘贴并核对。");
-    } catch {
-      setCopyFallback(exported.payload);
-      setNotice("浏览器未允许写入剪贴板，请复制下方完整内容。");
-    }
-  };
 
   if (!document) {
     return <main className="app-shell welcome-shell">
@@ -211,7 +197,7 @@ export function App() {
       <div className="topbar-actions">
         <button className="quiet-button" onClick={() => fileInput.current?.click()}>导入</button>
         <button className="quiet-button" onClick={exportPackage}>导出谱包</button>
-        <button className="quiet-button" onClick={() => void copyToYopu()}>复制到有谱么</button>
+        <button className="quiet-button" onClick={() => setShowYopuImport((shown) => !shown)}>导入到有谱么</button>
         <button className="quiet-button" onClick={() => window.print()}>打印 / PDF</button>
         <button className={`mode-button ${mode === "edit" ? "is-active" : ""}`} onClick={() => setMode(mode === "read" ? "edit" : "read")}>{mode === "read" ? "编辑" : "阅读"}</button>
       </div>
@@ -227,6 +213,21 @@ export function App() {
     </aside>
 
     <section className="document-area">
+      {showYopuImport && yopuImport && <section className="yopu-import no-print" aria-label="有谱么导入书签">
+        <p>把下面的按钮拖到 Chrome 书签栏（⌘⇧B 显示书签栏）。</p>
+        <a className="quiet-button" draggable ref={(element) => {
+          // React intentionally blocks javascript: props; this reviewed, generated URL
+          // is a draggable browser bookmark, never a navigation from this app.
+          element?.setAttribute("href", yopuImport.bookmarklet);
+        }} onClick={(event) => {
+          event.preventDefault();
+          setNotice("请把导入按钮拖到书签栏，再到有谱么草稿页点击该书签。");
+        }}>导入 {document.metadata.title} 到有谱么</a>
+        <p>打开有谱么空白草稿，点击刚保存的书签，谱面会直接插入。已有内容时会提示插入末尾。</p>
+        <p>书签保存的是当前谱面和转调；修改后请重新生成并替换书签。导入后请核对歌词、和弦及落点。</p>
+        <ul>{yopuImport.warnings.map((warning) => <li key={warning.code}>{warning.message}</li>)}</ul>
+      </section>}
+
       <div className="document-toolbar no-print" aria-label="谱面设置">
         <div className="toolbar-group">
           <span>转调</span>
@@ -271,10 +272,6 @@ export function App() {
         <Score document={document} onChordClick={handleScoreChord} />
       </article>
       {mode === "edit" && <Editor document={document} onChange={setDocument} />}
-      {copyFallback && <section className="copy-fallback no-print" aria-label="有谱么复制内容">
-        <p>复制下面的完整内容，再粘贴到有谱么编辑器：</p>
-        <textarea readOnly value={copyFallback} onFocus={(event) => event.currentTarget.select()} />
-      </section>}
       <p className="document-notice no-print" role="status">{notice}</p>
     </section>
     {voicingPicker && <VoicingPicker

@@ -34,7 +34,7 @@ test("desktop reader supports global chord display, transpose and desktop editin
   await expect(page.getByRole("slider", { name: /锚点/ }).first()).toBeVisible();
 });
 
-test("desktop changes The Cure C voicing, saves it in the song and copies a Yopu payload", async ({ page, isMobile }) => {
+test("desktop changes The Cure C voicing, saves it in the song and generates a Yopu import bookmark", async ({ page, isMobile }) => {
   test.skip(isMobile, "The persistence and clipboard path is covered once on desktop.");
   await page.context().grantPermissions(["clipboard-read", "clipboard-write"]);
   page.on("dialog", (dialog) => void dialog.accept());
@@ -56,10 +56,16 @@ test("desktop changes The Cure C voicing, saves it in the song and copies a Yopu
   await expect(page.getByRole("radio").first()).toHaveAttribute("aria-checked", "true");
   await page.getByRole("button", { name: "关闭指法选择器" }).click();
 
-  await page.getByRole("button", { name: "复制到有谱么" }).click();
-  const payload = await page.evaluate(() => navigator.clipboard.readText());
-  expect(payload.split("_XHE_COPY_PASTE_SENTINEL_")).toHaveLength(2);
-  expect(() => JSON.parse(payload.split("_XHE_COPY_PASTE_SENTINEL_")[1])).not.toThrow();
+  await page.getByRole("button", { name: "导入到有谱么" }).click();
+  const bookmark = page.getByRole("link", { name: "导入 The Cure 到有谱么" });
+  await expect(bookmark).toHaveAttribute("draggable", "true");
+  await page.locator(".yopu-import").screenshot({ path: "test-results/yopu-import-preview.png" });
+  const href = await bookmark.getAttribute("href");
+  expect(href).toMatch(/^javascript:/);
+  expect(decodeURIComponent(href!)).toContain("user-data-xhe-copy");
+  await bookmark.click();
+  await expect(page.locator(".document-notice")).toContainText("请把导入按钮拖到书签栏");
+
 });
 
 test("mobile retains every reading control and directs detailed edits to desktop", async ({ page, isMobile }) => {

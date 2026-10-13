@@ -228,9 +228,10 @@ button:disabled { cursor: not-allowed; opacity: .55; }
 .voicing-candidate strong { align-self: start; color: var(--accent-strong); font-size: 11px; }
 .voicing-picker-actions { display: flex; gap: 12px; align-items: center; justify-content: space-between; margin-top: 16px; }
 .voicing-picker-actions small, .voicing-picker-empty { color: var(--muted); font-size: 11px; line-height: 1.5; }
-.copy-fallback { width: min(1000px, 100%); margin: 18px auto 0; }
-.copy-fallback p { margin: 0 0 7px; color: var(--muted); font-size: 12px; }
-.copy-fallback textarea { width: 100%; min-height: 120px; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); font: 11px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+.yopu-import { width: min(1000px, 100%); margin: 18px auto 0; padding: 16px; border: 1px solid var(--line); border-radius: 8px; }
+.yopu-import p, .yopu-import li { color: var(--muted); font-size: 12px; line-height: 1.7; }
+.yopu-import a { display: inline-block; cursor: grab; }
+
 
 .score.with-diagrams .score-lyrics { padding-top: .8em; }
 .score.with-diagrams .inline-chord-anchor { height: 7.2em; }
